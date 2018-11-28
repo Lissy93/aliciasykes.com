@@ -1,33 +1,33 @@
-/* tslint:disable */
+
 
 import * as d3 from 'd3';
 
-export default class D3Voronoi{
+export default class D3Voronoi {
 
     /* Defining the attrinbuteds */
-    private target;
-    private svg;
-    private height;
-    private width;
+    private target: any;
+    private svg: any;
+    private height: any;
+    private width: any;
 
-    private voronoi;
-    private sites;
-    private polygon;
-    private link;
-    private site;
+    private voronoi: any;
+    private sites: any;
+    private polygon: any;
+    private link: any;
+    private site: any;
 
-    constructor(targetContainer = '#vonoroi'){
+    constructor(targetContainer = '#vonoroi') {
       this.target = d3.select(targetContainer);
-      this.renderTheAwesome()
+      this.renderTheAwesome();
       this.watchForResize();
     }
 
     /**
      * This is the main render method
      */
-    public renderTheAwesome(){
+    public renderTheAwesome() {
 
-      this.svg = this.target.append("svg");
+      this.svg = this.target.append('svg');
       this.width   = this.target.node().getBoundingClientRect().width;
       this.height = this.target.node().getBoundingClientRect().height;
 
@@ -42,8 +42,8 @@ export default class D3Voronoi{
       });
 
       /* Add the mouseover event, for highlighting */
-      let that = this;
-      this.svg.on('touchmove mousemove', function(){
+      const that = this;
+      this.svg.on('touchmove mousemove', function(this: any) {
         that.sites[0] = d3.mouse(this);
         that.redraw();
       });
@@ -60,7 +60,7 @@ export default class D3Voronoi{
         .enter().append('path')
         .call(this.redrawPolygon);
 
-      /* Add Lines for each polygon */  
+      /* Add Lines for each polygon */
       this.link = this.svg.append('g')
         .attr('class', 'links')
         .selectAll('line')
@@ -91,42 +91,42 @@ export default class D3Voronoi{
 
       /**
        * Renders a given polygon
-       * @param polygon 
+       * @param polygon
        */
-      private redrawPolygon(polygon) {
+      private redrawPolygon(polygon: any) {
         polygon
-          .attr('d', (d) => { return d ? 'M' + d.join('L') + 'Z' : null; })
-          .attr('class', (d, i) => { return 'v-' + i % 9; });
+          .attr('d', (d: any) => d ? 'M' + d.join('L') + 'Z' : null)
+          .attr('class', (d: any, i: number) => 'v-' + i % 9);
       }
 
       /**
        * Sets the dimensions and positions of the links between sites
        * @param link
        */
-      private redrawLink(link) {
+      private redrawLink(link: any) {
         link
-          .attr('x1', (d) => { return d.source[0]; })
-          .attr('y1', (d) => { return d.source[1]; })
-          .attr('x2', (d) => { return d.target[0]; })
-          .attr('y2', (d) => { return d.target[1]; });
+          .attr('x1', (d: any) => d.source[0])
+          .attr('y1', (d: any) => d.source[1])
+          .attr('x2', (d: any) => d.target[0])
+          .attr('y2', (d: any) => d.target[1]);
       }
 
       /**
        * Sets dimensions and positions of each given site
        * @param site
        */
-      private redrawSite(site) {
+      private redrawSite(site: any) {
         site
-          .attr('cx', (d) => { return d[0]; })
-          .attr('cy', (d) => { return d[1]; });
+          .attr('cx', (d: any) => d[0])
+          .attr('cy', (d: any) => d[1]);
       }
 
       /**
        * Removes old svg and rerenders a new one
-       * Only used in the (hopefully) rare occasion 
+       * Only used in the (hopefully) rare occasion
        * that a user will resize their browser
        */
-      private rerender(){
+      private rerender() {
         this.svg.remove();
         this.renderTheAwesome();
       }
@@ -135,18 +135,17 @@ export default class D3Voronoi{
        * Work-around to make the chart work on all (most) screen sizes
        * @param event
        */
-      private watchForResize(){
-        let resizeTimer = undefined;
+      private watchForResize() {
+        let resizeTimer: number;
         window.addEventListener('resize', () => {
           clearTimeout(resizeTimer);
           return resizeTimer = setTimeout((() =>
           this.rerender() ), 250);
-        })
+        });
       }
 
-      private mouseLeaveEvents(){
-        let that = this;
-        this.svg.on('mouseleave', function() {   
+      private mouseLeaveEvents() {
+        this.svg.on('mouseleave', () => {
           d3.selectAll('.polygons :first-child').attr('class', 'deselect-polygon');
         });
     }
