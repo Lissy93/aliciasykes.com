@@ -9,6 +9,8 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
+    "@types/d3": "^5.0.1",
+    "d3": "^5.7.0",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.17",
     "vue-class-component": "^6.0.0",
