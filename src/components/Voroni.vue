@@ -1,5 +1,5 @@
 <template>
-  <div id="vonoroi"></div>
+  <div id="vonoroi" :style="heightProperty"></div>
 </template>
 
 <script lang="js">
@@ -10,30 +10,15 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 import D3Voronoi from '../helpers/voronoi.ts';
 
-// Colors
-
-const primaryStroke = '';
-const secondryStroke = '';
-const dotOutline = '';
-const dotFill = '';
-const selectedDotOutline = '';
-const selectedDotFill = '';
-const segmentFill = [
-  '#47ffca',
-  '#41f2bf',
-  '#51f7c7',
-  '#4cffcb',
-  '#44fcc6',
-  '#40edba',
-  '#43f2be',
-  '#47ffc8',
-  '#42f7c1',
-  '#45f7c2',
-];
-
 @Component({
     mounted() {
-      new D3Voronoi();
+      const voronoi = new D3Voronoi();
+    },
+    props: ['height'],
+    computed: {
+      heightProperty() {
+        return `height: ${this.height ? this.height : '50%' }`;
+      },
     },
 })
 

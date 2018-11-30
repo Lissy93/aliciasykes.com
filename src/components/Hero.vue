@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <Voroni />
+    <Voroni height="50%"/>
     <span>This is the hero component</span>
   </div>
 </template>
