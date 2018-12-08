@@ -1,5 +1,7 @@
 <template>
-  <div id="vonoroi" :style="heightProperty"></div>
+  <div id="vonoroi" :style="heightProperty">
+    <slot></slot>
+  </div>
 </template>
 
 <script lang="js">
@@ -17,7 +19,7 @@ import D3Voronoi from '../helpers/voronoi.ts';
     props: ['height'],
     computed: {
       heightProperty() {
-        return `height: ${this.height ? this.height : '50%' }`;
+        return `height: ${this.height ? this.height : '100%' }`;
       },
     },
 })
@@ -30,17 +32,21 @@ export default class Voroni extends Vue {}
 <style lang="scss">
 
   #vonoroi{
-    height: 50%;
+     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
   }
 
     /* Vonoroi Chart Colors */
-    $col-lines:  #80f2e4;
-    $col-initial-primary-fill:  #24d3ff;
-    $col-selected-polygon: #8b80f2;
-    $col-selected-site-fill:  #80f2e4;
-    $col-selected-site-stroke:  #80f2e4;
+    $col-lines:  #c80000;
+    $col-initial-primary-fill:  #E53935;
+    $col-selected-polygon: #c80000;
+    $col-selected-site-fill:  #c80000;
+    $col-selected-site-stroke:  #c80000;
     $col-sites-fill: none;
-    $col-sites-line:  #80f2e4;
+    $col-sites-line:  #E53935;
+
+    #vonoroi {
+      background-color: $col-initial-primary-fill;
+    }
 
   @import '../styles/voronoi-styles.scss';
 </style>

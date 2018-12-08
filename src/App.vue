@@ -5,15 +5,9 @@
     <NavBar 
       v-if="['home'].indexOf($route.name) < 0"
       siteTitle="Alicia Sykes"
-      logoPath="../../public/img/main-icon.png"
+      logoPath=""
       :navData="require('./data/nav-bar-content.json')"
     />
-
-
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
 
     <router-view/>
   </div>

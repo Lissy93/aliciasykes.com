@@ -1,17 +1,42 @@
 <template>
   <div class="hero">
-    <Voroni height="50%"/>
-    <span>This is the hero component</span>
+    
+    <!-- Voronoi chart, and Home page title -->
+    <Voroni height="50%">
+      <div class="screen-calculated-width site-title-intro">
+        <h1>Alicia Sykes</h1>
+        <h2>Software Engineer</h2>
+      </div>
+    </Voroni>
+
+    <!-- Initial main buttons -->
+    <div class="primary-button-container">
+      <PrimaryButton bgColor="#E53935" textColor="#FFF">About</PrimaryButton>
+      <PrimaryButton bgColor="#E53935" textColor="#FFF">Work</PrimaryButton>
+      <PrimaryButton bgColor="#E53935" textColor="#FFF">Contact</PrimaryButton>
+    </div>
+
+    <!-- Smaller Links -->
+    <div class="animated-link-container">
+      <AnimatedLink href="#" title="GitHub | Alicia Sykes">Code</AnimatedLink>
+      <AnimatedLink href="#" title="StackOverflow | Alicia Sykes">Answers</AnimatedLink>
+      <AnimatedLink href="#" title="Twitter | Alicia Sykes">Tweets</AnimatedLink>
+      <AnimatedLink href="#" title="Medium | Alicia Sykes">Writings</AnimatedLink>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import Voroni from '@/components/Voroni.vue';
+import PrimaryButton from '@/components/PrimaryButton.vue';
+import AnimatedLink from '@/components/AnimatedLink.vue';
 
 @Component({
   components: {
     Voroni,
+    PrimaryButton,
+    AnimatedLink,
   },
 })
 export default class Hero extends Vue {}
@@ -19,7 +44,90 @@ export default class Hero extends Vue {}
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+    @import '../styles/media-queries.scss';
+
     .hero{
       height: 100%;
     }
+
+    .primary-button-container{
+      flex-flow: column wrap;
+    }
+
+    @media #{$small-devices-and-up} {
+      .primary-button-container{
+        flex-flow: row wrap;
+      }
+    }
+
+    .primary-button-container{
+      margin: 2em;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    
+
+    .animated-link-container{
+      margin: 2em;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    
+
+    .site-title-intro {
+      position: absolute;
+      display: block;
+      margin: 0 auto;
+      top: 20%;
+      color: #FFF;
+      line-height: 0.5;
+      border-radius: 20px;
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .screen-calculated-width{
+      width: 100%;
+      left: 0;
+    }
+
+    @media #{$small-devices-and-up} {
+      .screen-calculated-width {
+        width: 60%;
+        left: 20%;
+      }
+    }
+
+    @media #{$medium-devices-and-up} {
+      .screen-calculated-width {
+        width: 50%;
+        left: 25%;
+      }
+    }
+
+    @media #{$large-devices-and-up} {
+      .screen-calculated-width {
+        width: 40%;
+        left: 30%;
+      }
+    }
+
+    @media #{$xl-devices-and-up} {
+      .screen-calculated-width {
+        width: 30%;
+        left: 35%;
+      }
+    }
+
+
+    
 </style>

@@ -8,10 +8,5 @@
     ]},
     {"name": "About", "path": "/about", "children": []},
     {"name": "Contact", "path": "/contact", "children": []},
-    {"name": "Blog", "path": "/blog", "children": []},
-    {"name": "Social", "path": "/contact", "children": [
-        {"name": "Hack Map", "path": "/tools/map", "children": []},
-        {"name": "Have you been Hacked?", "path": "/tools/hacked", "children": []}
-    ]},
-    {"name": "Legal", "path": "/legal", "children": []}
+    {"name": "Blog", "path": "/blog", "children": []}
 ]

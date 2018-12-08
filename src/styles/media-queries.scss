@@ -1,0 +1,19 @@
+/**
+* This file contains the media queries used throughout the app
+* Specify device specific style in order of smallest first
+*/
+
+/* Extra small devices (phones, 600px and down) */
+$xs-devices-only: "only screen and (max-width: 600px)";
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+$small-devices-and-up: "only screen and (min-width: 600px)";
+
+/* Medium devices (landscape tablets, 768px and up) */
+$medium-devices-and-up: "only screen and (min-width: 768px)";
+
+/* Large devices (laptops/desktops, 992px and up) */
+$large-devices-and-up: "only screen and (min-width: 992px)";
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+$xl-devices-and-up: "only screen and (min-width: 1200px)";
