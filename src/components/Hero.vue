@@ -2,7 +2,7 @@
   <div class="hero">
     
     <!-- Voronoi chart, and Home page title -->
-    <Voroni height="50%">
+    <Voroni height="350px">
       <div class="screen-calculated-width site-title-intro">
         <h1>Alicia Sykes</h1>
         <h2>Software Engineer</h2>
@@ -18,10 +18,10 @@
 
     <!-- Smaller Links -->
     <div class="animated-link-container">
-      <AnimatedLink href="#" title="GitHub | Alicia Sykes">Code</AnimatedLink>
-      <AnimatedLink href="#" title="StackOverflow | Alicia Sykes">Answers</AnimatedLink>
-      <AnimatedLink href="#" title="Twitter | Alicia Sykes">Tweets</AnimatedLink>
-      <AnimatedLink href="#" title="Medium | Alicia Sykes">Writings</AnimatedLink>
+      <AnimatedLink icon="github" href="#" title="GitHub | Alicia Sykes">Code</AnimatedLink>
+      <AnimatedLink icon="stack-overflow" href="#" title="StackOverflow | Alicia Sykes">Answers</AnimatedLink>
+      <AnimatedLink icon="twitter" href="#" title="Twitter | Alicia Sykes">Tweets</AnimatedLink>
+      <AnimatedLink icon="medium" href="#" title="Medium | Alicia Sykes">Writings</AnimatedLink>
     </div>
   </div>
 </template>
@@ -46,10 +46,6 @@ export default class Hero extends Vue {}
 <style scoped lang="scss">
 
     @import '../styles/media-queries.scss';
-
-    .hero{
-      height: 100%;
-    }
 
     .primary-button-container{
       flex-flow: column wrap;

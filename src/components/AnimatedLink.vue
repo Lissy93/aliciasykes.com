@@ -1,5 +1,6 @@
 <template>
   <a class="animated-link" :style="`${textColorProp}`" :href="href" :title="title">    
+    <font-awesome-icon v-if="icon" :icon="['fab', icon]" class="social-icon" />
     <slot></slot>
   </a>
 </template>
@@ -7,10 +8,16 @@
 <script lang="js">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+library.add(fab);
+
 @Component({
     props: [
         'href',
         'title',
+        'icon',
         'textColor',
     ],
     computed: {
@@ -18,12 +25,20 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
         return `color: ${this.textColor ? this.textColor : '#000' }`;
       },
     },
+    components: {
+        FontAwesomeIcon,
+    },
 })
 export default class AnimatedLink extends Vue {}
 </script>
 
 
 <style scoped lang="scss">
+
+    .social-icon{
+      margin: 0 0.2em;
+    }
+
     .animated-link {
       position: relative;
       margin: 0.5em 1em;
