@@ -1,18 +1,7 @@
 <template>
-  <footer>
-      <div class="footer-item">
-        <a href="/">Cyber Security Today</a>
-      </div>
- 
-      <div class="footer-item">
-          Site Map
-      </div>
-      <div class="footer-item">
-          Legal
-      </div>
-    <div class="footer-item">
-          &copy; <a href="https://aliciasykes.com">Alicia Sykes</a> 2018. 
-          Licensed under <a href="https://gist.github.com/Lissy93/143d2ee01ccc5c052a17">MIT</a>.
+  <footer v-if="footerData">
+      <div class="footer-item" v-for="footerItem in footerData" v-bind:key="footerItem.name">
+        <a :href="footerItem.url" v-html="footerItem.name" />
       </div>
   </footer>
 </template>
@@ -20,7 +9,11 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
-@Component
+@Component({
+    props: [
+        'footerData',
+    ],
+})
 export default class Footer extends Vue {}
 </script>
 

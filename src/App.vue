@@ -18,7 +18,9 @@
 
     </div> <!--End Wrapper -->
 
-    <Footer />
+    <Footer 
+      :footerData="require('./data/footer-content.json')"
+    />
   </div>
 </template>
 
