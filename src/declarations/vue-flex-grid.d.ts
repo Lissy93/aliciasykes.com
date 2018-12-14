@@ -1,0 +1,1 @@
+declare module '@liqueflies/vue-flex-grid';
