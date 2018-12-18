@@ -8734,9 +8734,19 @@ vue-types@1.0.2:
   dependencies:
     lodash.isplainobject "4.0.6"
 
+vue@^2.5.16:
+  version "2.5.21"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.21.tgz#3d33dcd03bb813912ce894a8303ab553699c4a85"
+
 vue@^2.5.17:
   version "2.5.17"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.17.tgz#0f8789ad718be68ca1872629832ed533589c6ada"
+
+vuewordcloud@^18.7.11:
+  version "18.7.11"
+  resolved "https://registry.yarnpkg.com/vuewordcloud/-/vuewordcloud-18.7.11.tgz#285ae2b6d93ac6f1da6e60141227f68a64b30f24"
+  dependencies:
+    vue "^2.5.16"
 
 watchpack@^1.5.0:
   version "1.6.0"
