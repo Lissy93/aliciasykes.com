@@ -11,9 +11,15 @@
 
     <!-- Initial main buttons -->
     <div class="primary-button-container">
-      <PrimaryButton bgColor="#E53935" textColor="#FFF">About</PrimaryButton>
-      <PrimaryButton bgColor="#E53935" textColor="#FFF">Work</PrimaryButton>
-      <PrimaryButton bgColor="#E53935" textColor="#FFF">Contact</PrimaryButton>
+      <router-link to="/about">
+        <PrimaryButton bgColor="#E53935" textColor="#FFF">About</PrimaryButton>
+      </router-link>
+      <router-link to="/portfolio">
+        <PrimaryButton bgColor="#E53935" textColor="#FFF">Work</PrimaryButton>
+      </router-link>
+      <router-link to="/contact">
+        <PrimaryButton bgColor="#E53935" textColor="#FFF">Contact</PrimaryButton>
+      </router-link>
     </div>
 
     <!-- Smaller Links -->
@@ -49,6 +55,9 @@ export default class Hero extends Vue {}
 
     .primary-button-container{
       flex-flow: column wrap;
+      a {
+        text-decoration: none;
+      }
     }
 
     @media #{$small-devices-and-up} {
