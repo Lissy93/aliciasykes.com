@@ -35,6 +35,7 @@ export default class Footer extends Vue {}
             padding: 1em;
             min-width: 100%;
             color: #2c3e50;
+            text-align: center;
             @media (min-width: 769px) {
                 min-width: 10em;
             }
