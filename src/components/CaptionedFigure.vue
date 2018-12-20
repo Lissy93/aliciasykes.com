@@ -28,11 +28,18 @@ export default class CaptionedFigure extends Vue {
 <style lang="scss" scoped>
 
 figure {
-  display: block;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 0 20px 20px 0;
+    display: block;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 0 20px 20px 0;
+    border: 1px solid #bdbcbc;
+    border-radius: 2px;
+
+    img {
+        width: 260px;
+        margin-bottom: -6px;
+    }
 }
 figcaption {
   position: absolute;
@@ -50,36 +57,16 @@ figure:hover figcaption {
 }
 
 
-
-figure:before {
-  content: "?";
-  position: absolute;
-  font-weight: 800;
-  background: black;
-  background: rgba(255,255,255,0.75);
-  text-shadow: 0 0 5px white;
-  color: black;
-  width: 24px;
-  height: 24px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius:    12px;
-  border-radius:         12px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 24px;
-  -moz-transition: all 0.6s ease;
-  opacity: 0.75;
-}
-figure:hover:before {
-  opacity: 0;
-}
-
 figure:before { bottom: 10px; left: 10px; }
 figure figcaption { left: 0; bottom: -30%;}
 figure:hover figcaption { bottom: 0; }
 
 figcaption{
     width: 100%;
+    h4 {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
 }
 
 @media (hover: none) {
