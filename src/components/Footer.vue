@@ -39,7 +39,7 @@ export default class Footer extends Vue {}
             @media (min-width: 769px) {
                 min-width: 10em;
             }
-            a{
+            /deep/ a {
                 color: #2c3e50;
                 text-decoration: none;
                 &:hover{

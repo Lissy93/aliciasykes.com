@@ -21,9 +21,7 @@
         <nav>
           <ul class="main-nav" v-bind:class="{ menuOpen: isMenuOpen }">
             <li v-for="navBarItem in navBarItems" v-bind:key="navBarItem.name" @mouseover="visibleDropdown = navBarItem.name">
-              <div>
-                <router-link :to="navBarItem.path">{{navBarItem.name}}</router-link>
-              </div>
+              <router-link :to="navBarItem.path">{{navBarItem.name}}</router-link>
               <ul class="sub-nav" v-bind:class="{ open: visibleDropdown == navBarItem.name }"  @mouseleave="closeAllDropdowns">
                 <li v-for="navBarItemChild in navBarItem.children" v-bind:key="navBarItemChild.name">
                   <router-link :to="navBarItemChild.path">{{navBarItemChild.name}}</router-link>

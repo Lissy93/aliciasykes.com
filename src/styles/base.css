@@ -22,8 +22,9 @@ h3 {
     margin-bottom: 0;
 }
 
-p, span, div, ul, li {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+p, span, div, ul, li, input, textarea {
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;

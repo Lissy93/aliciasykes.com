@@ -38,7 +38,7 @@
             <vue-word-cloud
               :words="skillWordsList"
               :color="([, weight]) => weight > 8 ? '#c80000' : weight > 4 ? '#e53935' : '#fc6d6f'"
-              font-family="Avenir"
+              font-family="Raleway"
             />
           </Card>
         </column>
@@ -57,7 +57,9 @@
               v-for="socialLink in socialLinks" 
               v-bind:key="socialLink.title" 
               :href="socialLink.url" 
-              :title="socialLink.title">
+              :title="socialLink.title"
+              class="social-icon-container"
+              >
                 <img :src="`/img/social-icons/${socialLink.icon}.png`" class="social-icon">
             </a>
           </Card>
@@ -258,10 +260,10 @@ p {
 .social-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  .social-icon {
+  // justify-content: space-evenly;
+  .social-icon-container {
     margin: 0.2em;
-    display: inline;
+    flex: 1 0 17%;
   }
 }
 

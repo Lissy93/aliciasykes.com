@@ -83,6 +83,7 @@ header{
       display: block;
       margin: 0;
       border: 1px solid $secondary-color;
+      font-family: 'Raleway';
   
       &.router-link-exact-active {
         border: 1px solid $primary-color;
