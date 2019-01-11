@@ -33,6 +33,7 @@ export default class PrimaryButton extends Vue {}
       cursor: pointer;
       padding: 0.5em 1em;
       text-decoration: none;
+      text-align: center;
       box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
       &:hover{
         opacity: 0.95;

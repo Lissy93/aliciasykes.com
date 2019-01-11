@@ -1,6 +1,6 @@
 <template>
   <div class="portfolio-page">
-    <h1>Portfolio</h1>
+    <h2>Portfolio</h2>
 
 
 
@@ -244,6 +244,10 @@ export default class Portfolio extends Vue {}
     flex-wrap: wrap;
     justify-content: left;
     margin: 1.5em;
+}
+
+h2 {
+    font-size: 3em;
 }
 
 h3.date-subheading {

@@ -6,7 +6,7 @@
     <input class="contact-field" type="text" placeholder="Full Name">
     <input class="contact-field" type="email" placeholder="Email Address">
     <textarea class="contact-field" type="text" placeholder="Your Message"></textarea>
-    <button>Send</button>
+    <button @click="sendMail">Send</button>
         
   </div>
 </template>
@@ -18,6 +18,19 @@ import Card from '@/components/Card.vue';
 @Component({
   components: {
     Card,
+  },
+  methods: {
+    sendMail: () => {
+      // var service_id = 'gmail';
+      // var template_id = 'alicia';
+      // var template_params = {
+      //   name: 'John',
+      //   reply_email: 'john@doe.com',
+      //   message: 'This is awesome!'
+      // };
+
+      // (window as any).emailjs.send(service_id,template_id,template_params);
+    },
   },
 })
 export default class Contact extends Vue {}

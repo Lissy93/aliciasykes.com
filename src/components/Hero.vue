@@ -88,12 +88,12 @@ export default class Hero extends Vue {}
       position: absolute;
       display: block;
       margin: 0 auto;
-      top: 20%;
+      top: 12.5%;
       color: #FFF;
-      line-height: 0.5;
+      line-height: 0.75;
       border-radius: 20px;
       h1 {
-        font-size: 3rem;
+        font-size: 4rem;
       }
       h2 {
         font-size: 2rem;
