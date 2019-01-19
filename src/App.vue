@@ -5,7 +5,7 @@
 
     <!-- Navigation Bar (show on all pages, except home screen) -->
     <NavBar 
-      v-if="['home'].indexOf($route.name) < 0"
+      v-if="['home', 'cv'].indexOf($route.name) < 0"
       siteTitle="Alicia Sykes"
       logoPath=""
       :navData="require('./data/nav-bar-content.json')"

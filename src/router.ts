@@ -31,5 +31,10 @@ export default new Router({
       name: 'contact',
       component: () => import(/* webpackChunkName: "contact" */ './views/Contact.vue'),
     },
+    {
+      path: '/cv',
+      name: 'cv',
+      component: () => import(/* webpackChunkName: "cv" */ './views/Cv.vue'),
+    },
   ],
 });
