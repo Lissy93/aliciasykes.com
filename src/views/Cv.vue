@@ -52,25 +52,41 @@
       <!-- Website -->
       <div class="side-panel">
         <font-awesome-icon :icon="['far', 'hand-pointer']" class="side-panel-icon"/>
-        <span>aliciasykes.com</span>
+        <a href="https://aliciasykes.com/" title="Alicia Sykes | Personal Website">
+          aliciasykes.com
+        </a>
       </div>
 
       <!-- GitHub -->
       <div class="side-panel">
         <font-awesome-icon :icon="['fab', 'github']" class="side-panel-icon"/>
-        <span>alicia@as93.net</span>
+        <a href="https://github.com/lissy93" title="Alicia Sykes | GitHub">
+         github.com/lissy93
+        </a>
       </div>
 
       <!-- StackOverflow -->
       <div class="side-panel">
         <font-awesome-icon :icon="['fab', 'stack-overflow']" class="side-panel-icon"/>
-        <span>alicia@as93.net</span>
+        <a href="https://stackoverflow.com/users/979052/lissy" title="Alicia Sykes | StackOverflow">
+          stackoverflow.com/users/979052
+        </a>
       </div>
 
       <!-- LinkedIn -->
       <div class="side-panel">
         <font-awesome-icon :icon="['fab', 'linkedin']" class="side-panel-icon"/>
-        <span>alicia@as93.net</span>
+        <a href="https://www.linkedin.com/in/aliciasykes/" title="Alicia Sykes | LinkedIn">
+          linkedin.com/in/aliciasykes
+        </a>
+      </div>
+
+      <!-- KeyBase -->
+      <div class="side-panel">
+        <font-awesome-icon :icon="['fab', 'keybase']" class="side-panel-icon"/>
+          <a href="https://keybase.io/aliciasykes" title="Alicia Sykes | KeyBase">
+            keybase.io/aliciasykes
+          </a>
       </div>
 
         
@@ -112,13 +128,13 @@ aside {
     width: 100%;
   }
   @media #{$small-devices-and-up} {
-    width: 30%;
+    width: 35%;
   }
   @media #{$medium-devices-and-up} {
-    width: 25%;
+    width: 30%;
   }
   @media #{$large-devices-and-up} {
-    width: 20%;
+    width: 25%;
   }
 
   img.profile-picture {
@@ -145,10 +161,12 @@ aside {
       font-size: 30px;
       margin: 0 5px;
     }
-    span {
+    span, a {
       flex: 8;
       margin: 5px;
       color: white;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     &.bio-panel {
