@@ -88,11 +88,68 @@
             keybase.io/aliciasykes
           </a>
       </div>
-
-        
     </aside>
 
-          
+
+    <main>
+      <!-- Employment Hstory -->
+      <section>
+        <h3>
+          <font-awesome-icon :icon="['far', 'building']" class="side-panel-icon" />
+          Employment
+        </h3>
+        <Card>
+          hello
+        </Card> 
+      </section>
+
+      <!-- Other Experience -->
+      <section>
+        <h3>
+          <font-awesome-icon icon="check-double" class="side-panel-icon" />
+          Employment
+        </h3>
+        <Card>
+          hello
+        </Card> 
+      </section>
+
+      <!-- Education -->
+      <section>
+        <h3>
+          <font-awesome-icon icon="graduation-cap" class="side-panel-icon" />
+          Education
+        </h3>
+        <Card>
+          hello
+        </Card> 
+      </section>
+
+      <!-- Key Skills -->
+      <section>
+        <h3>
+          <font-awesome-icon icon="list-ul" class="side-panel-icon" />
+          Key Skills
+        </h3>
+        <Card>
+          hello
+        </Card>
+      </section> 
+
+      <!-- Hobbies and Interests -->
+      <section>
+        <h3>
+          <font-awesome-icon icon="star" class="side-panel-icon" />
+          Hobbies and Interests
+        </h3>
+        <Card>
+          hello
+        </Card> 
+      </section>
+
+
+    </main>
+            
   </div>
 </template>
 
@@ -115,7 +172,24 @@ export default class Cv extends Vue {}
 
 @import '../styles/media-queries.scss';
 
+.cv-page {
+
+}
+
+main {
+
+  h3 {
+    margin: 0;
+  }
+
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+
+}
+
 aside { 
+  float: left;
   display: flex;
   flex-direction: column;
   background: #2196F3;
