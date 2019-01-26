@@ -3,10 +3,12 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Portfolio from './views/Portfolio.vue';
 import Contact from './views/Contact.vue';
+import NotFound from './views/NotFound.vue';
 
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -16,9 +18,6 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
     },
     {
@@ -35,6 +34,15 @@ export default new Router({
       path: '/cv',
       name: 'cv',
       component: () => import(/* webpackChunkName: "cv" */ './views/Cv.vue'),
+    },
+    {
+      path: '/404',
+      name: '404',
+      component: NotFound,
+    },
+    {
+      path: '*',
+      redirect: '/404',
     },
   ],
 });
