@@ -98,8 +98,14 @@
           <font-awesome-icon :icon="['far', 'building']" class="side-panel-icon" />
           Employment
         </h3>
-        <Card>
-          hello
+        <Card class="section-card">
+          <h4>Software Engineer (Intern) @ University of Oxford</h4>
+          <span class="date-subtitle">June - September 2013 (3 months)</span>
+          <p>
+            Worked as part of a small Java team following the agile methodology. Developing software for
+            WWARN who are working towards the eradication of resistance to anti-malarial vaccinations. 
+            Involved processing mass amounts of data, so algorithm efficiency was paramount.
+          </p>
         </Card> 
       </section>
 
@@ -107,9 +113,9 @@
       <section>
         <h3>
           <font-awesome-icon icon="check-double" class="side-panel-icon" />
-          Employment
+          Other Experience
         </h3>
-        <Card>
+        <Card class="section-card">
           hello
         </Card> 
       </section>
@@ -120,7 +126,7 @@
           <font-awesome-icon icon="graduation-cap" class="side-panel-icon" />
           Education
         </h3>
-        <Card>
+        <Card class="section-card">
           hello
         </Card> 
       </section>
@@ -131,7 +137,7 @@
           <font-awesome-icon icon="list-ul" class="side-panel-icon" />
           Key Skills
         </h3>
-        <Card>
+        <Card class="section-card">
           hello
         </Card>
       </section> 
@@ -142,7 +148,7 @@
           <font-awesome-icon icon="star" class="side-panel-icon" />
           Hobbies and Interests
         </h3>
-        <Card>
+        <Card class="section-card">
           hello
         </Card> 
       </section>
@@ -177,14 +183,33 @@ export default class Cv extends Vue {}
 }
 
 main {
-
-  h3 {
-    margin: 0;
-  }
-
     padding: 2em;
     display: flex;
     flex-direction: column;
+
+  h3 {
+    margin: 0;
+    color: #a2a4a5;
+  }
+
+  section {
+    margin: 1em 0;
+    .section-card {
+      padding: 0.5em 1em;
+      margin-top: 0.5em;
+
+      h4 {
+        font-size: 1.5em;
+        font-weight: normal;
+        margin: 0.5em 0 0 0;
+      }
+      span.date-subtitle {
+        font-size: 0.8em;
+        color: #a2a4a5;
+      }
+    }
+  }
+
 
 }
 
