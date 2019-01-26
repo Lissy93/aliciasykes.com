@@ -5,10 +5,10 @@
         "icon": ""
     },
     { 
-        "name": "Licensed under <a href=\"https://gist.github.com/Lissy93/143d2ee01ccc5c052a17\">MIT</a>.",
+        "name": "Source Code",
         "url": "",
         "icon": ""
     },
-    { "name": "Legal", "url": "", "icon": ""},
-    { "name": "Site Map", "url": "", "icon": ""}
+    { "name": "Status Page", "url": "", "icon": ""},
+    { "name": "Legal", "url": "", "icon": ""}
 ]
