@@ -8,6 +8,15 @@
         ~~~~^~`~^~`~^~`~^~`~^~^~`^~^~`^~^~^~^~^~^~`^~~`
     -->
 
+    
+    <!-- The GitHub corner link -->  
+    <ForkMe 
+      hoverTitle="I built this site with Vue. Check out the source code on GitHub!"
+      githubUrl="https://github.com/Lissy93/alicia-sykes-website"
+      backgroundCol="#2196F3"
+      forgroundCol="#ebebeb"
+    />
+
     <aside>
       <!-- Profile Picture -->
       <img 
@@ -252,12 +261,14 @@
 import { Component, Vue } from 'vue-property-decorator';
 import Card from '@/components/Card.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import ForkMe from '@/components/ForkMe.vue';
 
 
 @Component({
   components: {
     Card,
     FontAwesomeIcon,
+    ForkMe,
   },
 })
 export default class Cv extends Vue {}

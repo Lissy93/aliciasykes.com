@@ -3,6 +3,15 @@
 
     <div class="wrapper">
 
+    <!-- The GitHub corner link -->  
+    <ForkMe 
+      v-if="['cv'].indexOf($route.name) < 0"
+      hoverTitle="I built this site with Vue. Check out the source code on GitHub!"
+      githubUrl="https://github.com/Lissy93/alicia-sykes-website"
+      forgroundCol="#e53935"
+      backgroundCol="#2c3e50"
+    />
+
     <!-- Navigation Bar (show on all pages, except home screen) -->
     <NavBar 
       v-if="['home', 'cv', '404'].indexOf($route.name) < 0"
@@ -30,6 +39,7 @@
 
   import NavBar from './components/NavBar.vue';
   import Footer from './components/Footer.vue';
+  import ForkMe from './components/ForkMe.vue';
 
   /** Import Font Awesome */
   import { library, IconPack } from '@fortawesome/fontawesome-svg-core';
@@ -43,6 +53,7 @@
   components: {
     NavBar,
     Footer,
+    ForkMe,
   },
 })
 export default class Home extends Vue {}
