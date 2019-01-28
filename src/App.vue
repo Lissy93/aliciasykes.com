@@ -14,7 +14,7 @@
 
     <!-- Navigation Bar (show on all pages, except home screen) -->
     <NavBar 
-      v-if="['home', 'cv', '404'].indexOf($route.name) < 0"
+      v-if="['home', 'cv', '404', 'blog'].indexOf($route.name) < 0"
       siteTitle="Alicia Sykes"
       logoPath=""
       :navData="require('./data/nav-bar-content.json')"
@@ -74,7 +74,7 @@ export default class Home extends Vue {}
 }
 
 .wrapper {
-  min-height: 100%;
+  min-height: 99%;
   margin-bottom: -3em ;
 }
 .footer, .push {
