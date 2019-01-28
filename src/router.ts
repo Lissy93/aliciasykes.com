@@ -36,6 +36,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "cv" */ './views/Cv.vue'),
     },
     {
+      path: '/blog',
+      name: 'blog',
+      component: () => import(/* webpackChunkName: "cv" */ './views/Blog.vue'),
+    },
+    {
       path: '/404',
       name: '404',
       component: NotFound,
