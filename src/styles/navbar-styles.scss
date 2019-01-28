@@ -12,7 +12,11 @@ header{
     @media (min-width: 769px) {
       display: block;
     }
-  
+
+    @media (min-width: 1025px) {
+      padding-right: 3.5em;
+    }
+    
     .bigmac{
       width: 10%;
       @media (min-width: 769px) {
