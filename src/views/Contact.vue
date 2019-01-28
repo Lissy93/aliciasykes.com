@@ -3,10 +3,20 @@
         
     <h2>Contact</h2>
 
-    <input class="contact-field" type="text" placeholder="Full Name">
-    <input class="contact-field" type="email" placeholder="Email Address">
-    <textarea class="contact-field" type="text" placeholder="Your Message"></textarea>
-    <button @click="sendMail">Send</button>
+    <div class="error" v-if="showError && !mailSent">
+      Please fill in all required fields.
+    </div>
+
+    <div v-if="!mailSent" class="mail-form">
+      <input class="contact-field" type="text" placeholder="Full Name" ref="fullName">
+      <input class="contact-field" type="email" placeholder="Email Address" ref="emailAddress">
+      <textarea class="contact-field" type="text" placeholder="Your Message" ref="userMessage"></textarea>
+      <button @click="sendMail">Send</button>
+    </div>
+
+    <div v-if="mailSent" class="mail-sent">
+      Your message has been sent. Please allow 48 hours for a reply.
+    </div>
         
   </div>
 </template>
@@ -19,21 +29,47 @@ import Card from '@/components/Card.vue';
   components: {
     Card,
   },
+  data() {
+    return {
+      showError: false,
+      mailSent: false,
+    };
+  },
   methods: {
-    sendMail: () => {
-      // var service_id = 'gmail';
-      // var template_id = 'alicia';
-      // var template_params = {
-      //   name: 'John',
-      //   reply_email: 'john@doe.com',
-      //   message: 'This is awesome!'
-      // };
+    sendMail() {
+      const fullName = (this.$refs.fullName as any).value;
+      const emailAddress = (this.$refs.emailAddress as any).value;
+      const userMessage = (this.$refs.userMessage as any).value;
 
-      // (window as any).emailjs.send(service_id,template_id,template_params);
+      if (fullName && emailAddress && userMessage) {
+
+        // Prepare the message
+        const serviceId = 'gmail';
+        const templateId = 'alicia';
+        const templateParams = {
+          name: fullName,
+          reply_email: emailAddress,
+          message: userMessage,
+        };
+
+        // Send the message
+        (window as any).emailjs.init('user_K6F041q1dQvz8SJLSOZCR');
+        (window as any).emailjs.send(serviceId, templateId, templateParams);
+
+        // Update the UI
+        (this as any).mailSent = true;
+      } else {
+        // User missed out some fields- don't send email
+        (this as any).showError = true;
+      }
     },
   },
 })
-export default class Contact extends Vue {}
+export default class Contact extends Vue {
+  public $refs!: {
+    fullName: HTMLFormElement,
+  };
+}
 </script>
 
 <style lang="scss">
@@ -50,6 +86,12 @@ export default class Contact extends Vue {}
 
   h2 {
     font-size: 3rem;
+    color: #FFF;
+  }
+
+  .mail-form {
+    display: flex;
+    flex-direction: column;
   }
 
   input, textarea, button {
@@ -68,12 +110,6 @@ export default class Contact extends Vue {}
     height: 8em;
   }
 
-  button {
-    
-    
-  }
-  
-
   @media #{$xs-devices-only} {
       input, textarea, button {
         width: 80%;
@@ -86,8 +122,12 @@ export default class Contact extends Vue {}
       }
     }
 
-  h2 {
-    color: #FFFFFF;
+  .error, .mail-sent {
+    margin: 0 auto;
+    padding: 1em;
+    color: #FFF;
+    border: 2px solid;
+    border-radius: 4px;
   }
 
   
