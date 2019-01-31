@@ -3,12 +3,5 @@
         "name": "&copy; <a href=\"https://aliciasykes.com\">Alicia Sykes</a> 2019.",
         "url": "#",
         "icon": ""
-    },
-    { 
-        "name": "Source Code",
-        "url": "",
-        "icon": ""
-    },
-    { "name": "Status Page", "url": "", "icon": ""},
-    { "name": "Legal", "url": "", "icon": ""}
+    }
 ]

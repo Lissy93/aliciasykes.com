@@ -24,10 +24,10 @@
 
     <!-- Smaller Links -->
     <div class="animated-link-container">
-      <AnimatedLink icon="github" href="#" title="GitHub | Alicia Sykes">Code</AnimatedLink>
-      <AnimatedLink icon="stack-overflow" href="#" title="StackOverflow | Alicia Sykes">Answers</AnimatedLink>
-      <AnimatedLink icon="twitter" href="#" title="Twitter | Alicia Sykes">Tweets</AnimatedLink>
-      <AnimatedLink icon="medium" href="#" title="Medium | Alicia Sykes">Writings</AnimatedLink>
+      <AnimatedLink icon="github" href="https://github.com/Lissy93" title="GitHub | Alicia Sykes">Code</AnimatedLink>
+      <AnimatedLink icon="stack-overflow" href="https://stackoverflow.com/users/979052" title="StackOverflow | Alicia Sykes">Answers</AnimatedLink>
+      <AnimatedLink icon="twitter" href="https://twitter.com/Lissy_Sykes" title="Twitter | Alicia Sykes">Tweets</AnimatedLink>
+      <AnimatedLink icon="medium" href="#" title="Medium | Alicia Sykes" class="hide">Writings</AnimatedLink>
     </div>
   </div>
 </template>
@@ -133,6 +133,8 @@ export default class Hero extends Vue {}
       }
     }
 
-
+  .hide {
+    display: none;
+  }
     
 </style>

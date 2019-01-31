@@ -1,5 +1,5 @@
 <template>
-  <a class="animated-link" :style="`${textColorProp}`" :href="href" :title="title">    
+  <a class="animated-link" :style="`${textColorProp}`" :href="href" :title="title" target="_blank" >    
     <font-awesome-icon v-if="icon" :icon="['fab', icon]" class="social-icon" />
     <slot></slot>
   </a>
