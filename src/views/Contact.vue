@@ -45,11 +45,11 @@ import Card from '@/components/Card.vue';
 
         // Prepare the message
         const serviceId = 'gmail';
-        const templateId = 'alicia';
+        const templateId = 'website-contact-form';
         const templateParams = {
-          name: fullName,
+          from_name: fullName,
           reply_email: emailAddress,
-          message: userMessage,
+          message_body: userMessage,
         };
 
         // Send the message
