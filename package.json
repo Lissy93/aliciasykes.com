@@ -28,6 +28,7 @@
     "npm": "^6.4.1",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.17",
+    "vue-analytics": "^5.16.2",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",

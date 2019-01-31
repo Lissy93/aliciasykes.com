@@ -37,11 +37,12 @@
 
   import { Component, Vue } from 'vue-property-decorator';
 
+  // Components that show on all pages
   import NavBar from './components/NavBar.vue';
   import Footer from './components/Footer.vue';
   import ForkMe from './components/ForkMe.vue';
 
-  /** Import Font Awesome */
+  // Icons from Font Awesome
   import { library, IconPack } from '@fortawesome/fontawesome-svg-core';
   import { fab } from '@fortawesome/free-brands-svg-icons';
   import { fas } from '@fortawesome/free-solid-svg-icons';

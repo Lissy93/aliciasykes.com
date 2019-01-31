@@ -32,8 +32,10 @@ export default class Voroni extends Vue {}
 <style lang="scss">
 
   #vonoroi{
-     box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
   }
+
+
 
     /* Vonoroi Chart Colors */
     $col-lines:  #c80000;
