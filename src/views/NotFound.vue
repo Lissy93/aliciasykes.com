@@ -5,13 +5,22 @@
       <br>
       <span class="sub-sub-title">Sorry about that</span>
       <img class="sad-robot" src="/img/white-robot.png" alt="Robot | Alicia Sykes">
+      <router-link to="/home">
+        <PrimaryButton bgColor="#FFF" textColor="#E53935" class="return-home-button">Return to Home</PrimaryButton>
+      </router-link>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import PrimaryButton from '@/components/PrimaryButton.vue';
 
-@Component
+
+@Component({
+  components: {
+    PrimaryButton,
+  },
+})
 export default class NotFound extends Vue {}
 
 </script>
@@ -31,6 +40,9 @@ export default class NotFound extends Vue {}
       font-size: 8em;
       text-align: center;
       color: white;
+      @media #{$xs-devices-only} {
+        margin-top: 0.1em;
+      }
     }
 
     span {
@@ -47,17 +59,35 @@ export default class NotFound extends Vue {}
       font-size: 1.5em;
     }
 
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2em;
+    }
+
+    .return-home-button {
+
+    }
+
     img.sad-robot {
       width: 250px;
       margin: 2em;
-      float: right;
+      position: absolute;
+      right: 1em;
+      bottom: 0;
 
       @media #{$xs-devices-only} {
         width: 150px;
-        float: none;
         margin: 1em auto;
         display: block;
+        position: relative;
       }
+
+       @media(max-height:800px) {
+         display: none;
+       }
     }
   }
 

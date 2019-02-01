@@ -77,6 +77,7 @@ export default class Home extends Vue {}
 .wrapper {
   min-height: 99%;
   margin-bottom: -3em ;
+  background: #ebebeb;
 }
 .footer, .push {
   min-height: 3em;
