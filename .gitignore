@@ -1,6 +1,14 @@
+
+# Compiled Files
+/dist/
+
+# OS X Crap
 .DS_Store
+
+# Libraries
 node_modules
 
+# Test snapshots
 /tests/e2e/videos/
 /tests/e2e/screenshots/
 
