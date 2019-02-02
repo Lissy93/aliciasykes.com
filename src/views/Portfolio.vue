@@ -236,7 +236,8 @@ export default class Portfolio extends Vue {}
 <style lang="scss" scoped>
 
 .portfolio-page {
-    margin: 1em;
+    margin: 1em auto;
+    max-width: 1200px;
 }
 
 .project-container {

@@ -25,7 +25,7 @@
         
         <column :xs="12" :sm="4">
           <h2 style="visibility: hidden">Picture</h2>
-          <Card class="card-content">
+          <Card class="card-content profile-picture-container">
             <img class="profile-picture" src="/img/profile-pictures/profile1.jpg" alt="Profile Picture | Alicia Sykes">
           </Card>
         </column>
@@ -233,6 +233,8 @@ export default class About extends Vue {}
 
 .about-page {
   background: #eaeaea;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 h2 {
@@ -247,6 +249,11 @@ p {
 
 .profile-picture {
   width: 100%;
+  max-width: 20em;
+}
+
+.profile-picture-container {
+  text-align: center;
 }
 
 .card-content {
