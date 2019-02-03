@@ -1,0 +1,202 @@
+{
+    "first": [
+        {
+            "title": "Sentiment Sweep",
+            "imgSrc": "/img/project-thumbnails/2017_sentiment-sweep.png",
+            "href": "https://github.com/Lissy93/twitter-sentiment-visualisation",
+            "description": "Real-time social media analysis, visualised with D3.js"
+        },
+        {
+            "title": "Cyber Security for Humans",
+            "imgSrc": "/img/project-thumbnails/2018_cyber-security.png",
+            "href": "https://github.com/Lissy93/personal-cyber-security-site",
+            "description": "A series of personal cyber security guides"
+         },
+         {
+            "title": "Happy App",
+            "imgSrc": "/img/project-thumbnails/2017_happy-app.png",
+            "href": "https://github.com/Lissy93/happy-app",
+            "description": "Annonymously gauge how your team is feeling, daily, and display results visually."
+         },
+         {
+            "title": "Hasami Shogi",
+            "imgSrc": "/img/project-thumbnails/2016_hasami-shogi.png",
+            "href": "https://github.com/Lissy93/hasami-shogi",
+            "description": "Swift iOS app or the classic board game, Hasami Shogi"
+         }
+    ],
+
+    "second": 
+    [
+    {
+       "title": "Unwasted | Putting food on the blockchain",
+       "imgSrc": "/img/project-thumbnails/2018_unwasted.png",
+       "href": "https://github.com/Lissy93/un-wasted",
+       "description": "Using the blockchain to reduce food wate"
+    },
+    {
+       "title": "Vue Link Grid",
+       "imgSrc": "/img/project-thumbnails/2018_vue-link-grid.png",
+       "href": "https://github.com/Lissy93/vue-link-grid",
+       "description": "A Vue component for showing a grid of actions"
+    },
+    {
+       "title": "Vue Checklist",
+       "imgSrc": "/img/project-thumbnails/2018_vue-checklist.png",
+       "href": "https://github.com/Lissy93/vue-checklist",
+       "description": "A simple checklist component, with local storage"
+    },
+    {
+       "title": "Voronoi Template",
+       "imgSrc": "/img/project-thumbnails/2018_voronoi.png",
+       "href": "https://github.com/Lissy93/voronoi-site-template",
+       "description": "GitHub pages template, featuring a nice interactive voronoi header"
+    },
+    {
+       "title": "Sentiment Analysis",
+       "imgSrc": "/img/project-thumbnails/2017_sentiment-analysis.png",
+       "href": "https://github.com/Lissy93/sentiment-analysis",
+       "description": "A light-weight effient, AFFINN-111 base sentiment analysis Node.js module"
+    },
+    {
+       "title": "Minimal Terminal Prompt",
+       "imgSrc": "/img/project-thumbnails/2017_minimal-terminal-prompt.png",
+       "href": "https://github.com/Lissy93/minimal-terminal-prompt",
+       "description": "A clean, yet informative Bash and ZSH prompt"
+    },
+    {
+       "title": "Real-time system stats widget",
+       "imgSrc": "/img/project-thumbnails/2017_conkey-setup.png",
+       "href": "https://github.com/Lissy93/conky-system-stats-widget",
+       "description": "Desktop widget showing real-time stats, for Linux. Using Conkey."
+    },
+    {
+       "title": "Super Simple Static Site",
+       "imgSrc": "/img/project-thumbnails/2016_ssss.png",
+       "href": "https://github.com/Lissy93/super-simple-static-site",
+       "description": "A scafold for a modern website"
+    },
+    {
+       "title": "Repo Heros",
+       "imgSrc": "/img/project-thumbnails/2016_repo-heros.png",
+       "href": "https://github.com/Lissy93/repo-heros",
+       "description": "Identify the true heros of open source project on GitHub"
+    },
+    {
+       "title": "Real-time speach analytics",
+       "imgSrc": "/img/project-thumbnails/2016_realtime-speach.png",
+       "href": "https://github.com/Lissy93/realtime-speech-analytics",
+       "description": "Uses your microphone, to show live stats about speach"
+    },
+
+    {
+       "title": "CV Maker",
+       "imgSrc": "/img/project-thumbnails/2016_cv-maker.png",
+       "href": "https://github.com/Lissy93/md-cv-maker",
+       "description": "Creates Material Design web CVs from JSON"
+    },
+    {
+       "title": "Tweet Location",
+       "imgSrc": "/img/project-thumbnails/2016_tweet-location.png",
+       "href": "https://github.com/Lissy93/tweet-location",
+       "description": "Find a location of a given Twitter post from its ID"
+    },
+    {
+       "title": "Web Dev School",
+       "imgSrc": "/img/project-thumbnails/2015_web-dev-school.png",
+       "href": "https://github.com/Lissy93/web-dev-school",
+       "description": "A tutorial website, for getting started with web development"
+    },
+    {
+       "title": "Tune Sender",
+       "imgSrc": "/img/project-thumbnails/2015_tune-sender.png",
+       "href": "https://github.com/Lissy93/tune-sender",
+       "description": "A native Android app to show music notes, and write, play and send tunes."
+    },
+    {
+       "title": "Study Time",
+       "imgSrc": "/img/project-thumbnails/2015_study-time.png",
+       "href": "https://github.com/Lissy93/study-time",
+       "description": "An Android app, to help you stay forcused while studying"
+    },
+    {
+       "title": "Treasure Hunt",
+       "imgSrc": "/img/project-thumbnails/2015_treasure-hunt.png",
+       "href": "https://github.com/Lissy93/treasure-hunt",
+       "description": "An Android app, for creating, sharing and completing treasure hunts"
+    },
+    {
+       "title": "Place Lookup",
+       "imgSrc": "/img/project-thumbnails/2015_place-lookup.png",
+       "href": "https://github.com/Lissy93/place-lookup",
+       "description": "Find the geographical location, for any fuzzy place name"
+    },
+    {
+       "title": "Testing in Node.js",
+       "imgSrc": "/img/project-thumbnails/2015_node-testing.png",
+       "href": "https://github.com/Lissy93/quick-example-of-testing-in-nodejs",
+       "description": "A simple test environment setup, for Node.js applications"
+    },
+    {
+       "title": "Intern Magnet",
+       "imgSrc": "/img/project-thumbnails/2015_intern-magnet.png",
+       "href": "https://github.com/Lissy93/intern-magnet",
+       "description": "A website allowing interns to find local work experience"
+    },
+    {
+       "title": "Gulp Example",
+       "imgSrc": "/img/project-thumbnails/2015_gulp-example.png",
+       "href": "https://github.com/Lissy93/gulp-example",
+       "description": "An example project with a complete gulpfile"
+    },
+    {
+       "title": "Find Region",
+       "imgSrc": "/img/project-thumbnails/2015_find-region.png",
+       "href": "https://github.com/Lissy93/find-region-from-location",
+       "description": "Finds the country name, alpha-2 and alpha-3 codes from latitude and longitude"
+    },
+    {
+       "title": "Fetch Tweets",
+       "imgSrc": "/img/project-thumbnails/2015_fetch-tweets.png",
+       "href": "https://github.com/Lissy93/fetch-tweets",
+       "description": "A Node.js wrapper for the Twitter API"
+    },
+    {
+       "title": "User Monkey",
+       "imgSrc": "/img/project-thumbnails/2014_user-monkey.png",
+       "href": "https://github.com/Lissy93/user-monkey",
+       "description": "A complete PHP user system"
+    },
+    {
+       "title": "Revision Quizzes",
+       "imgSrc": "/img/project-thumbnails/2014_revision-quizzes.png",
+       "href": "https://github.com/Lissy93/revision-quizzes",
+       "description": "A social quiz making and sharing website"
+    },
+    {
+       "title": "Suggest Movies",
+       "imgSrc": "/img/project-thumbnails/2014_suggest-movies.png",
+       "href": "https://lissy93.blogspot.com/2015/06/suggestmovies-friction-free-social.html",
+       "description": "A Twitter bot, that uses AI to suggest movies, based on your social media activity"
+    },
+    {
+       "title": "MVC Voting",
+       "imgSrc": "/img/project-thumbnails/2014_mvc-votes.png",
+       "href": "https://github.com/Lissy93/AlternativeVoteSystem",
+       "description": "An alternative voting system, based on MVC principles"
+    },
+    {
+       "title": "Minesweeper Extreme",
+       "imgSrc": "/img/project-thumbnails/2014_minesweeper.png",
+       "href": "https://github.com/Lissy93/Minesweper",
+       "description": "Native Android remake of the classic Minesweeper game"
+    },
+    {
+       "title": "Anti-Theft-Charge",
+       "imgSrc": "/img/project-thumbnails/2013_anti-theft-charge.png",
+       "href": "https://github.com/Lissy93/anti-theft-charge",
+       "description": "Safley Charge your phone in public spaces"
+    }
+ ]
+
+}
