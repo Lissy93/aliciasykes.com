@@ -1,12 +1,12 @@
 [
     {"name": "Home", "path": "/", "children": []},
-    {"name": "Portfolio", "path": "/portfolio", "children": [
-        {"name": "Passwords", "path": "/specifics/passwords", "children": []},
-        {"name": "Updates", "path": "/specifics/updates", "children": []},
-        {"name": "Browsing", "path": "/specifics/browsing", "children": []},
-        {"name": "2 FA", "path": "/specifics/2fa", "children": []}
-    ]},
+    {"name": "Portfolio", "path": "/portfolio", "children": []},
     {"name": "About", "path": "/about", "children": []},
     {"name": "Contact", "path": "/contact", "children": []},
-    {"name": "Blog", "path": "/blog", "children": []}
+    {"name": "More...", "path": "#", "children": [
+        {"name": "Blog", "path": "/blog", "children": []},
+        {"name": "CV", "path": "/cv", "children": []},
+        {"name": "Status Page", "path": "#", "children": []},
+        {"name": "Legal", "path": "#", "children": []}
+    ]}
 ]
