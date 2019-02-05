@@ -55,6 +55,7 @@ export default class Portfolio extends Vue {}
 
 .portfolio-page {
     margin: 1em auto;
+    padding: 0 1em;
     max-width: 1200px;
 }
 
