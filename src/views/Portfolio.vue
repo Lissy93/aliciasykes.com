@@ -42,6 +42,11 @@ import CaptionedFigure from '@/components/CaptionedFigure.vue';
     components: {
         CaptionedFigure,
     },
+    head: {
+        title: {
+            inner: 'Portfolio',
+        },
+    },
 })
 export default class Portfolio extends Vue {}
 </script>

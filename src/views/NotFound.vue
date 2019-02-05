@@ -20,6 +20,11 @@ import PrimaryButton from '@/components/PrimaryButton.vue';
   components: {
     PrimaryButton,
   },
+  head: {
+    title: {
+      inner: '404 Not Found',
+    },
+  },
 })
 export default class NotFound extends Vue {}
 

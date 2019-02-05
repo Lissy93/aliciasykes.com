@@ -9,7 +9,13 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
-@Component
+@Component({
+    head: {
+        title: {
+            inner: 'Blog',
+        },
+    },
+})
 export default class Blog extends Vue {}
 
 </script>

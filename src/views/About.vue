@@ -195,6 +195,11 @@ Vue.use(VueGrid);
     VueGrid,
     [VueWordCloud.name]: VueWordCloud,
   },
+  head: {
+    title: {
+      inner: 'About',
+    },
+  },
   data: () => {
     return {
       skillWordsList: [

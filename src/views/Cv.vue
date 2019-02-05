@@ -262,6 +262,11 @@ import ForkMe from '@/components/ForkMe.vue';
     FontAwesomeIcon,
     ForkMe,
   },
+  head: {
+    title: {
+      inner: 'CV',
+    },
+  },
 })
 export default class Cv extends Vue {}
 </script>

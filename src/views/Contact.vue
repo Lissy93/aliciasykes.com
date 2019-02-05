@@ -29,6 +29,11 @@ import Card from '@/components/Card.vue';
   components: {
     Card,
   },
+  head: {
+    title: {
+      inner: 'Contact',
+    },
+  },
   data() {
     return {
       showError: false,
