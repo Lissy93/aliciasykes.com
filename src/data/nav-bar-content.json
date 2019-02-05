@@ -6,7 +6,8 @@
     {"name": "More...", "path": "#", "children": [
         {"name": "Blog", "path": "/blog", "children": []},
         {"name": "CV", "path": "/cv", "children": []},
-        {"name": "Status Page", "path": "#", "children": []},
-        {"name": "Legal", "path": "#", "children": []}
+        {"name": "Status Page", "path": "/status-page", "children": []},
+        {"name": "Legal", "path": "/legal", "children": []},
+        {"name": "Log In", "path": "/login", "children": []}
     ]}
 ]

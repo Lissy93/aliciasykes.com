@@ -43,7 +43,22 @@ export default new Router({
     {
       path: '/blog',
       name: 'blog',
-      component: () => import(/* webpackChunkName: "cv" */ './views/Blog.vue'),
+      component: () => import(/* webpackChunkName: "blog" */ './views/Blog.vue'),
+    },
+    {
+      path: '/legal',
+      name: 'legal',
+      component: () => import(/* webpackChunkName: "legal" */ './views/Legal.vue'),
+    },
+    {
+      path: '/status-page',
+      name: 'status',
+      component: () => import(/* webpackChunkName: "status-page" */ './views/StatusPage.vue'),
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import(/* webpackChunkName: "login" */ './views/LogIn.vue'),
     },
     {
       path: '/404',
