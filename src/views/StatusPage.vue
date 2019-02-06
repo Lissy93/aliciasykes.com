@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="status-page">
         <h2>Status Page</h2>
         <h3>Status Page Coming Soon</h3>
         <p>
@@ -26,5 +26,15 @@ export default class StatusPage extends Vue {}
 
 
 <style lang="scss" scoped>
+
+.status-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1em;
+
+    h2 {
+        font-size: 3em;
+    }
+}
    
 </style>
