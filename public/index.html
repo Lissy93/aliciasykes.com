@@ -9,14 +9,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- Key site info -->
+    <title>Alicia Sykes</title>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+    <!-- Basic site meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>Alicia Sykes</title>
+
+    <!-- Social media meta -->
+    <meta property="og:title" content="Alicia Sykes">
+    <meta property="og:description" content="The homepage of Alicia Sykes, Software Engineer">
+    <meta property="og:image" content="/img/banner.png">
+    <meta property="og:url" content="https://aliciasykes.com">
+    <meta name="twitter:card" content="/img/banner.png">
+
+    <!-- JS libraries which really shouldn't be here -->
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
   </head>
   <body>
+    <!-- Sucks to be u, if your in Netscape -->
     <noscript>
       <strong>
         Alicia Sykes, Software Engineer.
@@ -24,7 +38,9 @@
         Please enable it to continue.
       </strong>
     </noscript>
+
+    <!-- Main app, built files are auto-injected-->
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+
   </body>
 </html>
