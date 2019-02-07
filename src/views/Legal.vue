@@ -2,11 +2,6 @@
     <div class="legal-wrapper">
         <h2>Legal</h2>
 
-        <h3>License</h3>
-        <article>
-            <MdViewer class="md">{{ require('../data/legal-privacy-policy.md') }}</MdViewer>
-        </article>
-
         <h3>Registered Information</h3>
         <article></article>
 
@@ -14,10 +9,19 @@
         <article></article>
 
         <h3>Privacy Policy</h3>
-        <article></article>
+        <article>
+            <MdViewer class="md">{{ require('../data/legal-privacy-policy.md') }}</MdViewer>
+        </article>
 
         <h3>Terms and Cnditions</h3>
-        <article></article>
+        <article>
+            <MdViewer class="md">{{ require('../data/legal-terms.md') }}</MdViewer>
+        </article>
+        
+        <h3>License, for source code</h3>
+        <article>
+            <MdViewer class="md">{{ require('../data/legal-license.md') }}</MdViewer>
+        </article>
 
         <br>
     </div>
@@ -58,7 +62,7 @@ export default class Legal extends Vue {}
    }
    article {
        padding: 0.5em 1em;
-       height: 15em;
+       height: 20em;
        background-color: #FFF;
        overflow: auto;
        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
