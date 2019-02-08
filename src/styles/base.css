@@ -34,4 +34,16 @@ p, span, div, ul, li, input, textarea {
 h1, h2, h3, h4, h5 {
     @import url('https://fonts.googleapis.com/css?family=Text+Me+One');
     font-family: 'Text Me One', sans-serif;
-  }
+}
+
+::selection {
+    background: #f76b69a4;
+    color: #000;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #f76b69a4;
+    color: #000;
+    text-shadow: none;
+}
