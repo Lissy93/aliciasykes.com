@@ -32,6 +32,7 @@
     "vue": "^2.5.17",
     "vue-analytics": "^5.16.2",
     "vue-class-component": "^6.0.0",
+    "vue-cookie-law": "^1.8.0",
     "vue-head": "^2.1.1",
     "vue-markdown": "^2.2.4",
     "vue-property-decorator": "^7.0.0",
