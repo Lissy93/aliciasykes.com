@@ -1,7 +1,4 @@
-## TERMS OF USE
-
-Last updated January 01, 2019
-
+*Last updated January 01, 2019*
 
 
 ### AGREEMENT TO TERMS
