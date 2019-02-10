@@ -20,6 +20,30 @@ I've made the code open source, so that anyone who would like to can use the com
 
 [![Screenshot](public/screenshots/1-homepage.png)](public/screenshots)
 
+## NGINX Conf
+
+To work nicley with NGINX, I've used the following config. (note the `try_fils` line, allows user to land on a sub-page, without dying)
+
+```
+server {
+
+    listen 80;
+
+    server_name aliciasykes.com www.aliciasykes.com aliciasykes.as93.net www.aliciasykes.as93.net;
+
+    location / {
+        proxy_pass http://localhost:3002;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        try_files $uri $uri/ /index.html;
+    }
+
+}
+```
+
 ## License
 
 Copyright 2019 Alicia Sykes
