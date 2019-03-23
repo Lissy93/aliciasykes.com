@@ -143,6 +143,7 @@
             </p>
 
             <ul>
+                <li>Won 1st place overall at <a hrer="https://bit.ly/2Tt31Zw">StartHack, Switzerland 2019</a>. Created <a href="https://github.com/Lissy93/pax">Pax</a></li>
                 <li>
                   Hack Junction Helsinki 2018, Inteligen Buildings Award, sponsored by KONE
                 </li>
