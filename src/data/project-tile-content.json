@@ -29,6 +29,12 @@
     "second": 
     [
     {
+      "title": "Pax",
+      "imgSrc": "/img/project-thumbnails/2019_pax.png",
+      "href": "https://github.com/Lissy93/pax",
+      "description": "A script that detects and removes camera flashes from a video stream"
+    },
+    {
        "title": "Unwasted | Putting food on the blockchain",
        "imgSrc": "/img/project-thumbnails/2018_unwasted.png",
        "href": "https://github.com/Lissy93/un-wasted",
