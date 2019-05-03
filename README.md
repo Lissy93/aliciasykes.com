@@ -1,48 +1,23 @@
-# The homepage for Alicia Sykes
+# The Homepage for Alicia Sykes
 
 Live app: [https://aliciasykes.com](https://aliciasykes.com)
 
-This is the source code for my personal homepage. It was made possible, thanks to the amazing [Vue.js](https://vuejs.org/) framework.
-
-I've made the code open source, so that anyone who would like to can use the components I built as part of it. Everything's tested and documented.
+This is the source code for my personal homepage. It's nothing special, but thought I'd make the code open-source, on the off-chance that any of the components were any use to anyone else.
 
 ## Running Locally
 
 - **Grab the source code** `git clone https://github.com/Lissy93/alicia-sykes-website.git`
 - **Fetch dependencies** `yarn install`
-- **Compile (with hot-reload!) for development** `yarn run serve`
-- **Compile and minify ready for production** `yarn run build`
-- **Run the tests** `yarn run test`
-- **Lints and auto-fixes files** `yarn run lint`
-- **Run the end-to-end tests** `yarn run test:e2e`
+- **Compile (with hot-reload!) for development** `yarn dev`
+- **Compile and minify ready for production** `yarn build`
+- **Start production server** `yarn start`
+- **Run the tests** `yarn test`
+- **Lints and auto-fixes files** `yarn lint`
+- **Run the end-to-end tests** `yarn test:e2e`
 
 ## Screenshot
 
-[![Screenshot](public/screenshots/1-homepage.png)](public/screenshots)
-
-## NGINX Conf
-
-To work nicley with NGINX, I've used the following config. (note the `try_fils` line, allows user to land on a sub-page, without dying)
-
-```
-server {
-
-    listen 80;
-
-    server_name aliciasykes.com www.aliciasykes.com aliciasykes.as93.net www.aliciasykes.as93.net;
-
-    location / {
-        proxy_pass http://localhost:3002;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-        try_files $uri $uri/ /index.html;
-    }
-
-}
-```
+[![Screenshot](https://i.imgur.com/vn5ijqQ.png)](Screenshot)
 
 ## License
 
