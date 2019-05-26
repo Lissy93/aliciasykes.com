@@ -32,11 +32,9 @@ export default class MdViewer extends Vue {
     }
     h3 {
       font-size: 1.2rem;
-      font-weight: bold;
     }
     h4, h5{
       font-size: 1rem;
-      font-weight: bold;
     }
   }
 </style>

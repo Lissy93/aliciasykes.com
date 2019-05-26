@@ -94,6 +94,7 @@ export default class Hero extends Vue {}
       border-radius: 20px;
       h1 {
         font-size: 4rem;
+        letter-spacing: 5px;
       }
       h2 {
         font-size: 2rem;

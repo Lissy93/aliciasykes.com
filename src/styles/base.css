@@ -1,3 +1,4 @@
+/* Main app layout */
 html, body, #app {
     height: 100%;
     margin: 0;
@@ -5,25 +6,10 @@ html, body, #app {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Text Me One', sans-serif;
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-h3, h4, h5 {
-    text-align: left;
-}
-
-h3 {
-    font-size: 1.5em;
-    margin-bottom: 0;
-}
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bangers|Raleway');
 
 p, span, div, ul, li, input, textarea {
-    @import url('https://fonts.googleapis.com/css?family=Raleway');
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -32,10 +18,20 @@ p, span, div, ul, li, input, textarea {
 }
 
 h1, h2, h3, h4, h5 {
-    @import url('https://fonts.googleapis.com/css?family=Text+Me+One');
-    font-family: 'Text Me One', sans-serif;
+    font-family: 'Bangers', sans-serif;
+    font-weight: normal;
 }
 
+h1, h2 { text-align: center; }
+
+h3, h4, h5 { text-align: left; }
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+/* Highlight Selection Color */
 ::selection {
     background: #f76b69a4;
     color: #000;

@@ -273,7 +273,6 @@ p {
 .social-container {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-evenly;
   .social-icon-container {
     margin: 0.2em;
     flex: 1 0 17%;
@@ -283,7 +282,7 @@ p {
 .experience-container{
   h3 {
     font-size: 1.8em;
-    font-weight: bold;
+    margin-bottom: 0;
   }
   
   p {

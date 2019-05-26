@@ -64,7 +64,6 @@ figure:hover figcaption { bottom: 0; }
 figcaption{
     width: 100%;
     h4 {
-        font-weight: bold;
         font-size: 1.2em;
     }
 }
