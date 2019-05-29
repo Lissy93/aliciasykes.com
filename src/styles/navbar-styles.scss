@@ -108,6 +108,7 @@ header{
     max-height: 0;
     overflow: hidden;
     transition: height, 0.5s linear;
+    z-index: 10;
 
     &.open {
       max-height: 500px;

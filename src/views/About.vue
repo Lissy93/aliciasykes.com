@@ -26,7 +26,17 @@
         <column :xs="12" :sm="4">
           <h2 style="visibility: hidden">Picture</h2>
           <Card class="card-content profile-picture-container">
-            <img class="profile-picture" src="/img/profile-pictures/profile1.jpg" alt="Profile Picture | Alicia Sykes">
+            <carousel :perPage="1">
+              <slide v-for="pic in profilePics" :key="pic.fileName">
+                <div class="img-container">
+                  <img  
+                    class="profile-picture"
+                    :src="`/img/profile-pictures/${pic.fileName}`"
+                    :alt="pic.altText"
+                  >
+                </div>
+              </slide>
+            </carousel>
           </Card>
         </column>
       </row>
@@ -183,10 +193,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
 import Card from '@/components/Card.vue';
 import VueGrid from '@liqueflies/vue-flex-grid';
+import { Component, Vue } from 'vue-property-decorator';
 import VueWordCloud from 'vuewordcloud';
+import { Carousel, Slide } from 'vue-carousel';
+
 
 Vue.use(VueGrid);
 
@@ -195,6 +207,8 @@ Vue.use(VueGrid);
     Card,
     VueGrid,
     [VueWordCloud.name]: VueWordCloud,
+    Carousel,
+    Slide,
   },
   head: {
     title: {
@@ -203,6 +217,15 @@ Vue.use(VueGrid);
   },
   data: () => {
     return {
+      profilePics: [
+        {fileName: 'profile1.jpg', altText: 'Profile Picture'},
+        {fileName: 'profile2.jpg', altText: 'Profile Picture'},
+        {fileName: 'profile3.jpg', altText: 'Profile Picture'},
+        {fileName: 'profile4.jpg', altText: 'Profile Picture'},
+        {fileName: 'profile5.jpg', altText: 'Profile Picture'},
+        {fileName: 'profile6.jpg', altText: 'Profile Picture'},
+        {fileName: 'profile7.jpg', altText: 'Profile Picture'},
+      ],
       skillWordsList: [
         ['D3.js', 8], ['Node.js', 9], ['JavaScript', 10], ['Unit Testing', 7], ['React JS', 8],
         ['Angular', 8], ['Vue', 9], ['ES6', 10], ['React Native', 9], ['Native Script', 7],
@@ -214,7 +237,6 @@ Vue.use(VueGrid);
         ['SCRUM', 6], ['Scaled-Agile', 4], ['Kanban', 4], ['QA', 4],
         ['C++', 5], ['Python', 7], ['C#', 8], ['Ruby', 4], ['PHP', 8], ['C', 4], ['Perl', 4],
         ],
-
         socialLinks: [
           {title: 'GitHub', icon: 'github', url: 'https://github.com/lissy93' },
           {title: 'LinkedIn', icon: 'linkedin', url: 'http://linkedin.com/in/aliciasykes' },
@@ -253,9 +275,17 @@ p {
   font-size: 1.2em;
 }
 
-.profile-picture {
-  width: 100%;
-  max-width: 20em;
+/deep/ .VueCarousel-wrapper {
+  max-height: 350px;
+}
+
+.img-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 0;
+  .profile-picture {
+    width: 300px;
+  }
 }
 
 .profile-picture-container {

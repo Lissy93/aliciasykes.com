@@ -36,6 +36,7 @@
     "serve-static": "^1.13.2",
     "vue": "^2.6.10",
     "vue-analytics": "^5.16.4",
+    "vue-carousel": "^0.18.0",
     "vue-class-component": "^6.0.0",
     "vue-cookie-law": "^1.10.0",
     "vue-head": "^2.1.1",
