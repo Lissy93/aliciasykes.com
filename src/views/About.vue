@@ -28,11 +28,10 @@
           <Card class="card-content profile-picture-container">
             <carousel :perPage="1">
               <slide v-for="pic in profilePics" :key="pic.fileName">
-                <div class="img-container">
-                  <img  
-                    class="profile-picture"
-                    :src="`/img/profile-pictures/${pic.fileName}`"
-                    :alt="pic.altText"
+                <div
+                  class="img-container"
+                  :style="`background-image: url('/img/profile-pictures/${pic.fileName}');`"
+                  :title="pic.altText"
                   >
                 </div>
               </slide>
@@ -218,13 +217,16 @@ Vue.use(VueGrid);
   data: () => {
     return {
       profilePics: [
-        {fileName: 'profile1.jpg', altText: 'Profile Picture'},
-        {fileName: 'profile2.jpg', altText: 'Profile Picture'},
-        {fileName: 'profile3.jpg', altText: 'Profile Picture'},
-        {fileName: 'profile4.jpg', altText: 'Profile Picture'},
-        {fileName: 'profile5.jpg', altText: 'Profile Picture'},
-        {fileName: 'profile6.jpg', altText: 'Profile Picture'},
-        {fileName: 'profile7.jpg', altText: 'Profile Picture'},
+        {fileName: 'profile1.jpg', altText: 'Winning StartHack 2016'},
+        {fileName: 'profile2.jpg', altText: 'Alicia Sykes'},
+        {fileName: 'profile3.jpg', altText: 'Teaching at Code School'},
+        {fileName: 'profile4.jpg', altText: 'Oxford Half Marathon'},
+        {fileName: 'profile5.jpg', altText: 'Winning StartHack 2019'},
+        {fileName: 'profile6.jpg', altText: 'Chilton 100 Mile'},
+        {fileName: 'profile7.jpg', altText: 'Winning IoT, HackJunction Helsinki'},
+        {fileName: 'profile8.jpg', altText: 'Presenting at StartHack Switzerland'},
+        {fileName: 'profile9.jpg', altText: 'Winning BlockChain Award, Zurich'},
+        {fileName: 'profile10.jpg', altText: 'Alicia Sykes in Oxford'},
       ],
       skillWordsList: [
         ['D3.js', 8], ['Node.js', 9], ['JavaScript', 10], ['Unit Testing', 7], ['React JS', 8],
@@ -280,12 +282,12 @@ p {
 }
 
 .img-container {
-  width: 300px;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
   margin: 0 auto;
-  padding: 0;
-  .profile-picture {
-    width: 300px;
-  }
 }
 
 .profile-picture-container {

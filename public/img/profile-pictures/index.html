@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Key Site Info -->
+    <title>Website Images | Alicia Sykes</title>
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Basic site meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- Fonts and styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Bangers" rel="stylesheet">
+
+    <!-- Heavy JavaScript libraries, loaded over a slow CDN, for the worst possible user experience -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+    <link  href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script  type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
+
+    <style>
+        body {
+            background: #e53935;
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+            font-family: 'Bangers', sans-serif;
+            font-size: 3em;
+        }
+        p, a, small {
+            color: #ffffff;
+            font-family: 'Raleway', sans-serif;
+        }
+        .nGY2GThumbnail {
+            border-color: white !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Photos</h1>
+    
+    <div id="nanogallery2"></div>
+
+    <br>
+    <small>© <a href="https://aliciasykes.com">Alicia Sykes</a> 2019</small>
+
+    <script>
+        function makePhotoArr(num){
+            var results = [];
+            for (var i = 1; i <= num; i++) {
+                results.push({
+                    src: 'profile'+i+'.jpg',
+                    srct: 'profile'+i+'.jpg'
+                });
+            }
+            return results;
+        }
+        jQuery(document).ready(function () {
+           jQuery("#nanogallery2").nanogallery2( {
+               // ### gallery settings ### 
+               thumbnailHeight:  150,
+               thumbnailWidth:   150,
+               itemsBaseURL:     '/img/profile-pictures/',
+               items: makePhotoArr(17)
+             });
+         });
+     </script>
+</body>
+</html>
