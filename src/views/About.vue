@@ -67,9 +67,10 @@
               v-bind:key="socialLink.title" 
               :href="socialLink.url" 
               :title="socialLink.title"
-              class="social-icon-container"
-              >
-                <img :src="`/img/social-icons/${socialLink.icon}.png`" class="social-icon">
+              class="social-icon"
+              target="_blank"
+            >
+              <font-awesome-icon :icon="['fab', socialLink.icon]" />
             </a>
           </Card>
         </column>
@@ -197,7 +198,7 @@ import VueGrid from '@liqueflies/vue-flex-grid';
 import { Component, Vue } from 'vue-property-decorator';
 import VueWordCloud from 'vuewordcloud';
 import { Carousel, Slide } from 'vue-carousel';
-
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 Vue.use(VueGrid);
 
@@ -208,6 +209,7 @@ Vue.use(VueGrid);
     [VueWordCloud.name]: VueWordCloud,
     Carousel,
     Slide,
+    FontAwesomeIcon,
   },
   head: {
     title: {
@@ -241,14 +243,12 @@ Vue.use(VueGrid);
         ],
         socialLinks: [
           {title: 'GitHub', icon: 'github', url: 'https://github.com/lissy93' },
+          {title: 'StackOverflow', icon: 'stack-overflow', url: 'http://stackoverflow.com/users/979052/lissy' },
           {title: 'LinkedIn', icon: 'linkedin', url: 'http://linkedin.com/in/aliciasykes' },
+          {title: 'KeyBase', icon: 'keybase', url: 'https://keybase.io/aliciasykes' },
           {title: 'Twitter', icon: 'twitter', url: 'http://twitter.com/lissy_sykes' },
-          {title: 'Blogger', icon: 'blogger', url: 'http://lissy93.blogspot.co.uk/' },
+          {title: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/' },
           {title: 'Facebook', icon: 'facebook', url: 'http://fb.com/liss.sykes' },
-          {title: 'Google Plus', icon: 'googleplus', url: 'https://plus.google.com/+AliciaSykes' },
-          {title: 'YouTube', icon: 'youtube', url: 'https://www.youtube.com/channel/UCq521kk0-fziXNJa3rQtrMQ' },
-          {title: 'StackOverflow', icon: 'stackoverflow', url: 'http://stackoverflow.com/users/979052/lissy' },
-          {title: 'Email', icon: 'mail', url: 'mailto:alicia@aliciasykes.com' },
           {title: 'Skype', icon: 'skype', url: 'skype:alicia_sykes?call' },
         ],
       };
@@ -260,6 +260,11 @@ export default class About extends Vue {}
 
 
 <style lang="scss" scoped>
+
+.social-icon {
+  color: #e53935;
+  font-size: 3em;
+}
 
 .about-page {
   background: #eaeaea;
@@ -305,9 +310,12 @@ p {
 .social-container {
   display: flex;
   flex-wrap: wrap;
-  .social-icon-container {
-    margin: 0.2em;
-    flex: 1 0 17%;
+  .social-icon {
+    padding: 5px;
+    transition: 0.3s;
+    &:hover {
+      color: #ff7673;
+    }
   }
 }
 

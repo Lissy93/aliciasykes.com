@@ -53,11 +53,11 @@
   Vue.use(VueCarousel);
 
   @Component({
-  components: {
-    NavBar,
-    Footer,
-    ForkMe,
-  },
+    components: {
+      NavBar,
+      Footer,
+      ForkMe,
+    },
 })
 export default class Home extends Vue {}
 
