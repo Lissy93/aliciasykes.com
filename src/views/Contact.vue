@@ -8,6 +8,7 @@
     </div>
 
     <div v-if="!mailSent" class="mail-form">
+      <p class="next-availibility">Next availibility: August 2019</p>
       <input class="contact-field" type="text" placeholder="Full Name" ref="fullName">
       <input class="contact-field" type="email" placeholder="Email Address" ref="emailAddress">
       <textarea class="contact-field" type="text" placeholder="Your Message" ref="userMessage"></textarea>
@@ -16,6 +17,15 @@
 
     <div v-if="mailSent" class="mail-sent">
       Your message has been sent. Please allow 48 hours for a reply.
+    </div>
+
+    <div class="phone-details">
+      <p>
+        For urgent, work-related queries you can get hold of me via WhatsApp on my work 
+        number: <b><a href="https://wa.me/447736271533">+44(0)7736271533</a></b>
+        <br>
+        I will aim to reply promptly from 08:30-17:00 Mon-Fri
+      </p>
     </div>
         
   </div>
@@ -92,6 +102,11 @@ export default class Contact extends Vue {
   h2 {
     font-size: 3rem;
     color: #FFF;
+    margin-bottom: 0.5em;
+  }
+
+  .next-availibility {
+    text-align: center;
   }
 
   .mail-form {
@@ -133,6 +148,16 @@ export default class Contact extends Vue {
     color: #FFF;
     border: 2px solid;
     border-radius: 4px;
+  }
+
+  .phone-details {
+    padding: 1em 0 4em 0;
+    p {
+      text-align: center;
+      a {
+        color: #2c3e50;
+      }
+    }
   }
 
   
