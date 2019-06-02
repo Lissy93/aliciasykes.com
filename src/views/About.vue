@@ -77,70 +77,32 @@
 
       </row>
 
+
       <row>
         <column :xs="12">
           <h2>Experience</h2>
-          <Card class="card-content experience-container">
-            
-            <h3>Software Engineer at University of Oxford</h3>
-            <p>
-                Using Java to write a module for
-                <a href='http://www.wwarn.org/'>WWARN</a>
-                as part of a small agile team.
-                Involved mass amounts of data, millions of patient and vaccination
-                records, so algorithms had to be efficient.
-                Also gained experience using Tomcat, Jenkins, SQL and XML, Maven, JUnit, Hibernate
-            </p>
-
-            <h3>Internship at Accenture UK</h3>
-            <p>
-                Interned at Accenture UK as a software engineer, initially for 12 months,
-                I then returned as a permant employee.
-                Received comprehensive training, and then worked across several large government 
-                departments, before moving onto the Accenture UKI Innovation Programme, 
-                 as a lead dev, coding innovative prototype apps on 4 - 6 week cycles.
-                <br>
-                After that I then worked for several large retailers, developing native apps and 
-                full-stack web applications. All of which were in cross-functional agile teams.
-            </p>
-
-            <h3>Web Admin at UTC Swindon</h3>
-            <p>
-                Managed a WordPress based site for a the
-                <a href='http://www.utcswindon.co.uk/'>University Technical College, Swindon</a>
-                This included consulting with senior members of the University College and then
-                independently developing the features they desired
-            </p>
-
-            <h3>President of University Computing Society</h3>
-            <p>
-                Organised technical and social events for students
-                interested in computing. This started as a very small society,
-                and by the end of the year had several hundred members with many
-                regular events.
-            </p>
+          <Card class="card-content experience-container">           
 
             <h3>Teaching Computer Science</h3>
             <p>
+              I am really passionate about coding, and so I care a lot about 
+              helping others get into programming, especially girls.
               While at University I volunteered in secondary schools,
-                running after school programming clubs, for 11- 16 year-olds.
-                After this I worked towards the
-                <a href='http://uas.ac.uk/'>Undergraduate Ambassador Scheme</a>
-                where I was given the opportunity to shadow, assist and learn
-                from computing teachers, and in the end take some full lessons.
-                I also did 1-to-1 tutoring for A Level pupils, and have helped those
-                struggling with computing and programming achieve good grades.
-                I developed a number of online coding resources for beginners,
-                thar are available free
-                <a href='http://web-dev.school/computer-science-resources.php'>here</a>.
-            </p>
-
-            <h3>Freelance Web and App Development</h3>
-            <p>
-                Over the past couple of years I have developed a number
-                of websites and mobile applications for small businesses and
-                individuals. This has been a good chance to work across many
-                industries, and to put into practice the skills I learn in my own time.
+              running after school programming clubs, for 11- 16 year-olds.
+              After this I worked towards the
+              <a href='http://uas.ac.uk/'>Undergraduate Ambassador Scheme</a>
+              where I was given the opportunity to shadow, assist and learn
+              from computing teachers, and in the end take some full lessons.
+              I also did 1-to-1 tutoring for A Level pupils, and have helped those
+              struggling with computing and programming achieve good grades.
+              <br><br>
+              I developed a number of online coding resources for beginners,
+              thar are available free
+              <a href='http://web-dev.school/computer-science-resources.php'>here</a>.
+              And when I have a spair moment, I answer questions on 
+              <a href="https://stackoverflow.com/users/979052/alicia">StackOverflow.</a>
+              I have attended hackathons and tech events as a mentor, and at work I
+              really enjoy helping to train up junior team members, in the latest tech.
             </p>
 
             <h3>Hackathons</h3>
@@ -184,10 +146,57 @@
             </ul>
             <p>More recently I have been attending hackathons as a mentor</p>
 
+            <h3>Open Source</h3>
+            <p>
+              I really strongly believe that open source is the way forward, and have great admiration 
+              for the many OS devs who without which, computers, the internet and the world would not 
+              be what it is today. Where possible I modularise all my code, open-sourcing standalone 
+              components. I try hard to keep it clean, documented and well-tested, and then license it under MIT.
+            </p>
+
+            <h3>Education</h3>
+            <p>
+              I was lucky enough to go to University in the UK, and
+              I graduated with a First-Class Honours degree in Computer 
+              Science from Oxford Brookes University, and also won the Btitish 
+              Computer Society award for my dissertation, which I'd really enjoyed building.
+              <br><br>
+              While I was studying I had the chance do internships and side-jobs which taught 
+              me a lot about real-world programming. I did a Summer job writing Java at at a 
+              research project at Oxford University, that aimed to reduce anti-malarial resistance. 
+              I then did a year of part-time work developing and maintaining the website for UTC Swindon.
+              I really enjoyed chilling with my coding friends, and I became the president of 
+              the Computing Society.              
+            </p>
+
+            
+            <h3>Work</h3>
+            <p>
+              I am very fortunate that my work, is also my hobby and I genuinley love coding. 
+              Most of what I do for work is full-stack: with Vue, React or Angular for the 
+              frontent, and Node.js and more recently Go Lang for the backend, and mobile 
+              development: React Native and Flutter. 
+              <br><br>
+              The clients I served over the past 5 or so years, have mainly been 
+              full-stack and mobile projects. I worked in a team developing an AR bathroom 
+              planning tool for Kingfisher Digital using Angular, then built a mobile app 
+              for Shell for EV drivers using React Native. Then worked for Boots making a
+              customer prescription dashboard in ReactJS and then I went back to Shell, 
+              but for a different project, this time in ReactJS.
+              As well as a couple of smaller web projects, for other clients.
+              <br><br>
+              Prior to this, and after graduating I joined Accenture, where I got the chance to work 
+              on variety of different roles for for various clients, which just further confirmed 
+              that what I want to persue is full-stack and mobile development. I then moved onto 
+              their Innovation Programme, where we built out fast PoCs for clients on 6-8 week 
+              cycles, which was fun as we used different tech for each project, including AI, 
+              ML, NLU, CV, IoT.. This was also the first dev lead role I did, and I really 
+              enjoyed being able help teach more junior devs.
+            </p>
+
           </Card>
         </column>
       </row>
-
     </grid>
   </div>
 </template>
