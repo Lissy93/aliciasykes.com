@@ -81,29 +81,7 @@
       <row>
         <column :xs="12">
           <h2>Experience</h2>
-          <Card class="card-content experience-container">           
-
-            <h3>Teaching Computer Science</h3>
-            <p>
-              I am really passionate about coding, and so I care a lot about 
-              helping others get into programming, especially girls.
-              While at University I volunteered in secondary schools,
-              running after school programming clubs, for 11- 16 year-olds.
-              After this I worked towards the
-              <a href='http://uas.ac.uk/'>Undergraduate Ambassador Scheme</a>
-              where I was given the opportunity to shadow, assist and learn
-              from computing teachers, and in the end take some full lessons.
-              I also did 1-to-1 tutoring for A Level pupils, and have helped those
-              struggling with computing and programming achieve good grades.
-              <br><br>
-              I developed a number of online coding resources for beginners,
-              thar are available free
-              <a href='http://web-dev.school/computer-science-resources.php'>here</a>.
-              And when I have a spair moment, I answer questions on 
-              <a href="https://stackoverflow.com/users/979052/alicia">StackOverflow.</a>
-              I have attended hackathons and tech events as a mentor, and at work I
-              really enjoy helping to train up junior team members, in the latest tech.
-            </p>
+          <Card class="card-content experience-container">
 
             <h3>Hackathons</h3>
             <p>
@@ -134,14 +112,14 @@
                   (Created <a href='http://smart-depart.herokuapp.com/'>SmartDepart</a>, an alarm that wakes you up appropriately earlier if there are delays on your morning commute.)</span>
                 </li>
                 <li>
+                  <span>Member of the winning team at London HealthHack 2015</span>
+                </li>
+                <li>
                   <span>2nd place at AngelHack 2014 (created <a href='http://goo.gl/sdXLpC'>Anti-Theft Charge</a>)</span></li>
                 <li>
                   <span>2nd place (and Intelligent Headset main prize) at
                   <a href='http://www.eventbrite.com/e/devlab-live-2014-1-day-conference-2-day-hackathon-tickets-10909188677'>DevLab Live</a>,
                   London 2014 (created City Explorer, in a team)</span>
-                </li>
-                <li>
-                  <span>Member of the winning team at London HealthHack 2015</span>
                 </li>
             </ul>
             <p>More recently I have been attending hackathons as a mentor</p>
@@ -154,11 +132,32 @@
               components. I try hard to keep it clean, documented and well-tested, and then license it under MIT.
             </p>
 
+            <h3>Teaching Computer Science</h3>
+            <p>
+              I am really passionate about coding, and so I care a lot about 
+              helping others get into programming, especially girls.
+              While at University I volunteered in secondary schools,
+              running after school programming clubs, for 11- 16 year-olds.
+              After this I worked towards the
+              <a href='http://uas.ac.uk/'>Undergraduate Ambassador Scheme</a>
+              where I was given the opportunity to shadow, assist and learn
+              from computing teachers, and in the end take some full lessons.
+              I also did 1-to-1 tutoring for A Level pupils, and have helped those
+              struggling with computing and programming achieve good grades.
+              <br><br>
+              I developed a number of online coding resources for beginners,
+              thar are available free
+              <a href='http://web-dev.school/computer-science-resources.php'>here</a>.
+              And when I have a spair moment, I answer questions on 
+              <a href="https://stackoverflow.com/users/979052/alicia">StackOverflow.</a>
+              I have attended hackathons and tech events as a mentor, and at work I
+              really enjoy helping to train up junior team members, in the latest tech.
+            </p>
+
             <h3>Education</h3>
             <p>
-              I was lucky enough to go to University in the UK, and
-              I graduated with a First-Class Honours degree in Computer 
-              Science from Oxford Brookes University, and also won the Btitish 
+              I went to University in the UK, and graduated with a First-Class Honours 
+              degree in Computer Science from Oxford Brookes, and also got the Btitish 
               Computer Society award for my dissertation, which I'd really enjoyed building.
               <br><br>
               While I was studying I had the chance do internships and side-jobs which taught 
@@ -172,26 +171,26 @@
             
             <h3>Work</h3>
             <p>
-              I am very fortunate that my work, is also my hobby and I genuinley love coding. 
-              Most of what I do for work is full-stack: with Vue, React or Angular for the 
-              frontent, and Node.js and more recently Go Lang for the backend, and mobile 
-              development: React Native and Flutter. 
+              I am very fortunate that my work, is also my hobby and I genuinley love software engineering. 
+              Most of what I do for work is full-stack: (<i>with Vue, React or Angular for the 
+              frontent, and Node.js for and more recently Go Lang for the backend </i>), and mobile 
+              development: (<i>using React Native and Flutter, but I can also do Swift and Kotlin</i>). 
               <br><br>
               The clients I served over the past 5 or so years, have mainly been 
               full-stack and mobile projects. I worked in a team developing an AR bathroom 
               planning tool for Kingfisher Digital using Angular, then built a mobile app 
               for Shell for EV drivers using React Native. Then worked for Boots making a
-              customer prescription dashboard in ReactJS and then I went back to Shell, 
-              but for a different project, this time in ReactJS.
-              As well as a couple of smaller web projects, for other clients.
+              customer prescription dashboard in ReactJS, before going back to Shell, 
+              on a different project, this time in ReactJS.
+              Between that I've also worked on a couple of smaller client projects.
               <br><br>
-              Prior to this, and after graduating I joined Accenture, where I got the chance to work 
-              on variety of different roles for for various clients, which just further confirmed 
-              that what I want to persue is full-stack and mobile development. I then moved onto 
-              their Innovation Programme, where we built out fast PoCs for clients on 6-8 week 
-              cycles, which was fun as we used different tech for each project, including AI, 
-              ML, NLU, CV, IoT.. This was also the first dev lead role I did, and I really 
-              enjoyed being able help teach more junior devs.
+              Prior to this, and after graduating I joined Accenture, where I got the chance to 
+              work on a range of different roles for for various clients across several industries, 
+              which just further confirmed that what I want to persue is full-stack and mobile 
+              development. I then moved onto their Innovation Programme, where we built out 
+              fast PoCs for clients on 6-8 week cycles, which was fun as we used different 
+              tech for each project, including AI, ML, NLU, CV, IoT.. This was also the 
+              first dev lead role I did, and I really enjoyed being able help teach more junior devs.
             </p>
 
           </Card>
@@ -341,6 +340,7 @@ p {
   a {
     color: #2c3e50;
   }
+
 }
 
 
