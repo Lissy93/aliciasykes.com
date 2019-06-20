@@ -27,7 +27,13 @@
     ],
 
     "second": 
-    [
+    [   
+    {
+      "title": "TFL Lift Availability",
+      "imgSrc": "/img/project-thumbnails/2019_tfl-lift-availibility.png",
+      "href": "https://github.com/Lissy93/tfl-lift-availability-dash",
+      "description": "Uses computer vision to determine real-time lift status"
+    },
     {
       "title": "Pax",
       "imgSrc": "/img/project-thumbnails/2019_pax.png",
