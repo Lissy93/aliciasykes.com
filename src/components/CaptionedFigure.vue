@@ -1,5 +1,5 @@
 <template>
-    <a :href="href" :alt="`${title} | Icon`" :title="title">
+    <a :href="href" :alt="`${title} | Icon`" :title="title" target="_blank">
         <figure>
             <img :src="imgSrc" :alt="`${title} | Image`" :title="title">
             <figcaption>
