@@ -73,16 +73,12 @@ export default class Hero extends Vue {}
       flex-wrap: wrap;
     }
 
-    
-
     .animated-link-container{
       margin: 2em;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
     }
-
-    
 
     .site-title-intro {
       position: absolute;
@@ -94,7 +90,7 @@ export default class Hero extends Vue {}
       border-radius: 20px;
       h1 {
         font-size: 4rem;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
       }
       h2 {
         font-size: 2rem;

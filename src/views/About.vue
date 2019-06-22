@@ -93,6 +93,12 @@
             </p>
 
             <ul>
+                <li>
+                  Won 1st place overall at <a hrer="http://infrahack.hackpartners.com/">Infra-hack 2019.</a> 
+                  Used CV to determine real-time
+                  <a href="https://github.com/Lissy93/tfl-lift-availability-dash">escalator status</a>.
+                   Also recieved the Network Rail and the TFL prize.
+                </li>
                 <li>Won 1st place overall at <a hrer="https://bit.ly/2Tt31Zw">StartHack, Switzerland 2019</a>. Created <a href="https://github.com/Lissy93/pax">Pax</a></li>
                 <li>
                   Hack Junction Helsinki 2018, Inteligen Buildings Award, sponsored by KONE
@@ -288,6 +294,10 @@ h2 {
 p {
   text-align: left;
   font-size: 1.2em;
+}
+
+li a {
+  margin : 0;
 }
 
 /deep/ .VueCarousel-wrapper {
