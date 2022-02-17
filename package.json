@@ -56,5 +56,8 @@
     "typescript": "^3.3.4000",
     "vue-gh-pages": "^1.19.0",
     "vue-template-compiler": "^2.6.10"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
