@@ -51,15 +51,14 @@
     "@vue/cli-plugin-pwa": "^3.5.1",
     "@vue/cli-plugin-typescript": "^3.5.1",
     "@vue/cli-service": "^3.5.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.1",
     "sass-loader": "^7.0.1",
     "typescript": "^3.3.4000",
     "vue-gh-pages": "^1.19.0",
     "vue-template-compiler": "^2.6.10"
   },
   "engines": {
-    "node": "16.0.0",
-    "npm": "8.5.0",
-    "yarn": "1.22.0"
+    "node": "14.0.0",
+    "npm": "8.5.0"
   }
 }
