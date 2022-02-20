@@ -300,10 +300,6 @@ li a {
   margin : 0;
 }
 
-/deep/ .VueCarousel-wrapper {
-  max-height: 350px;
-}
-
 .img-container {
   width: 100%;
   height: 300px;
@@ -354,4 +350,10 @@ li a {
 }
 
 
+</style>
+
+<style lang="scss" scoped>
+.VueCarousel-wrapper {
+  max-height: 350px;
+}
 </style>

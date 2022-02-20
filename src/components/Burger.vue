@@ -54,7 +54,7 @@ $burgerSize: 1em;
 .bigmac span {
   display: block;
   position: absolute;
-  height: $burgerSize / 4;
+  height: calc($burgerSize / 4);
   width: 100%;
   background: #ee6373;
   border-radius: 9px;
@@ -75,7 +75,7 @@ $burgerSize: 1em;
 }
 
 .bigmac span:nth-child(2),.bigmac span:nth-child(3) {
-  top: $burgerSize / 2;
+  top: calc($burgerSize / 2);
 }
 
 .bigmac span:nth-child(4) {
@@ -103,7 +103,7 @@ $burgerSize: 1em;
 }
 
 .bigmac.open span:nth-child(4) {
-  top: $burgerSize / 2;
+  top: calc($burgerSize / 2);
   width: 0%;
   left: 50%;
 }

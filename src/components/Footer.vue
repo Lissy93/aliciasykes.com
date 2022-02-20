@@ -13,7 +13,7 @@
 
       <!-- Footer Content -->
       <div class="footer-item" v-for="footerItem in footerData" v-bind:key="footerItem.name">
-        <a :href="footerItem.url" v-html="footerItem.name" />
+        <a :href="footerItem.url">{{ footerItem.name }}</a>
       </div>
   </footer>
 </template>
@@ -45,7 +45,7 @@ export default class Footer extends Vue {}
         display: flex;
         flex-wrap: wrap;
         font-family: 'Raleway', sans-serif;
-        padding-top: 0.15em;
+        padding-top: 0.1em;
 
         .footer-item {
             flex-grow: 1;
@@ -56,7 +56,7 @@ export default class Footer extends Vue {}
             @media (min-width: 769px) {
                 min-width: 10em;
             }
-            /deep/ a {
+            a {
                 color: #2c3e50;
                 text-decoration: none;
                 &:hover{
@@ -65,20 +65,22 @@ export default class Footer extends Vue {}
             }
         }
     }
+</style>
 
-    // Cookie Banner
-    /deep/ .Cookie--blood-orange {
-        background: #2c3e50;
-        padding: 10px;
-        .Cookie__content, .Cookie__content a {
-            color: #FFF;
-            margin: 0;
-        }
-        .Cookie__button {
-            background: #e53935;
-        }
-        .Cookie__button:hover {
-            background: #E76A68;
-        }
+<style lang="scss">
+// Cookie Banner
+.Cookie--blood-orange {
+    background: #2c3e50;
+    padding: 10px;
+    .Cookie__content, .Cookie__content a {
+        color: #FFF;
+        margin: 0;
     }
+    .Cookie__button {
+        background: #e53935;
+    }
+    .Cookie__button:hover {
+        background: #E76A68;
+    }
+}
 </style>
