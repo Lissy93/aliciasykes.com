@@ -49,7 +49,7 @@
   import Footer from './components/Footer.vue';
   import ForkMe from './components/ForkMe.vue';
 
-  library.add(fab, fas, (far as IconPack));
+  library.add((fab as IconPack), (fas as IconPack), (far as IconPack));
   Vue.use(VueCarousel);
 
   @Component({
