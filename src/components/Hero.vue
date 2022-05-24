@@ -27,7 +27,8 @@
       <AnimatedLink icon="github" href="https://github.com/Lissy93" title="GitHub | Alicia Sykes">Code</AnimatedLink>
       <AnimatedLink icon="stack-overflow" href="https://stackoverflow.com/users/979052" title="StackOverflow | Alicia Sykes">Answers</AnimatedLink>
       <AnimatedLink icon="twitter" href="https://twitter.com/Lissy_Sykes" title="Twitter | Alicia Sykes">Tweets</AnimatedLink>
-      <AnimatedLink icon="medium" href="#" title="Medium | Alicia Sykes" class="hide">Writings</AnimatedLink>
+      <AnimatedLink icon="medium" href="https://notes.aliciasykes.com" title="Medium | Alicia Sykes">Writings</AnimatedLink>
+      <AnimatedLink icon="linkedin" href="https://www.linkedin.com/in/aliciasykes" title="LinkedIn | Alicia Sykes">Experience</AnimatedLink>
     </div>
   </div>
 </template>
