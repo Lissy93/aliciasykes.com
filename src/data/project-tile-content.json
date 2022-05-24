@@ -2,13 +2,13 @@
    "first": [
       {
          "title": "Dashy",
-         "imgSrc": "",
+         "imgSrc": "/img/project-thumbnails/2021_dashy.png",
          "href": "https://github.com/Lissy93/dashy",
          "description": "Highly customizable self-hosted dashboard platform"
       },
       {
          "title": "Personal Security Checklist",
-         "imgSrc": "",
+         "imgSrc": "/img/project-thumbnails/2020_security-checklist.png",
          "href": "https://github.com/Lissy93/personal-security-checklist",
          "description": "Ultimate list of tips for securing your digital life"
       },
@@ -16,15 +16,33 @@
          "title": "Sentiment Sweep",
          "imgSrc": "/img/project-thumbnails/2017_sentiment-sweep.png",
          "href": "https://github.com/Lissy93/twitter-sentiment-visualisation",
-         "description": "Real-time social media analysis, visualised with D3.js"
+         "description": "Real-time social media analysis, visualized with D3.js"
       }
    ],
    "second": [
+      {
+         "title": "Email Comparison",
+         "imgSrc": "/img/project-thumbnails/2022_email-comparison.png",
+         "href": "https://github.com/Lissy93/email-comparison",
+         "description": "Comparison table of so-called private and / or secure email providers"
+      },
+      {
+         "title": "All the Countries",
+         "imgSrc": "/img/project-thumbnails/2021_all-countries.png",
+         "href": "https://github.com/Lissy93/all-the-countries",
+         "description": "List of all the world's countries, flags, capitals and facts, for memorizing."
+      },
       {
          "title": "Happy App",
          "imgSrc": "/img/project-thumbnails/2017_happy-app.png",
          "href": "https://github.com/Lissy93/happy-app",
          "description": "Annonymously gauge how your team is feeling, daily, and display results visually."
+      },
+      {
+         "title": "NFU",
+         "imgSrc": "/img/project-thumbnails/2020_nfu.png",
+         "href": "https://github.com/Lissy93/nfu",
+         "description": ""
       },
       {
          "title": "Hasami Shogi",
