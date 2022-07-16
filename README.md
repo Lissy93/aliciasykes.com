@@ -1,30 +1,36 @@
-# The Homepage for Alicia Sykes
+<!-- Title & Description -->
+<h1 align="center">🌐 Personal Website</h1>
+<p align="center">
+  <i>The source code for <a href="https://aliciasykes.com/">aliciasykes.com</a></i>
+</p>
 
-Live app: [https://aliciasykes.com](https://aliciasykes.com)
+<!-- Screenshot & Link -->
+<p align="center">
+<a href="https://aliciasykes.com" title="Screenshot - AliciaSykes.com">
+<img src="https://i.imgur.com/vn5ijqQ.png" width="800" alt="Screenshot" />
+</a>
+</p>
 
-This is the source code for my personal homepage. It's nothing special, but thought I'd make the code open-source, on the off-chance that any of the components were any use to anyone else.
+<!-- Project Commands -->
 
-## Running Locally
+## Building and Deploying
 
-- **Grab the source code** `git clone https://github.com/Lissy93/alicia-sykes-website.git`
-- **Fetch dependencies** `yarn install`
-- **Compile (with hot-reload!) for development** `yarn dev`
-- **Compile and minify ready for production** `yarn build`
-- **Start production server** `yarn start`
-- **Run the tests** `yarn test`
-- **Lints and auto-fixes files** `yarn lint`
-- **Run the end-to-end tests** `yarn test:e2e`
+To deploy the app: Clone the repo, cd into it, install dependencies then build the app. You can then upload dist to any static hosting provider or CDN, or use the included node server with npm start.
 
-## Screenshot
+#### Project Commands
+- Fetch dependencies: `yarn install`
+- Start development server: `yarn dev`
+- Build for production: `yarn build`
+- Start production server: `yarn start`
+- Run the tests: `yarn test`
+- Lint and formats: `yarn lint`
+- Run the tests: `yarn test`
 
-[![Screenshot](https://i.imgur.com/vn5ijqQ.png)](Screenshot)
+---
 
-## License
-
-Copyright 2019 Alicia Sykes
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+<!-- Footer & License -->
+<p  align="center">
+  <i>© <a href="https://aliciasykes.com">Alicia Sykes</a> 2014 - 2022</i><br>
+  <i>Licensed under <a href="https://gist.github.com/Lissy93/143d2ee01ccc5c052a17">MIT</a></i><br>
+  <a href="https://github.com/lissy93"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a>
+</p>
