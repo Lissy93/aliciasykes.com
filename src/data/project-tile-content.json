@@ -27,6 +27,12 @@
    ],
    "second": [
       {
+         "title": "Go-APOD",
+         "imgSrc": "/img/project-thumbnails/2022_go-apod.png",
+         "href": "https://github.com/Lissy93/go-apod",
+         "description": "A CORS-enabled, no-auth API for NASA's Astronomy Picture of the Day"
+      },
+      {
          "title": "Email Comparison",
          "imgSrc": "/img/project-thumbnails/2022_email-comparison.png",
          "href": "https://github.com/Lissy93/email-comparison",
