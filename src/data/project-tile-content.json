@@ -7,6 +7,12 @@
          "description": "Highly customizable self-hosted dashboard platform"
       },
       {
+         "title": "Awesome Privacy",
+         "imgSrc": "/img/project-thumbnails/2022_awesome-privacy.png",
+         "href": "https://github.com/Lissy93/awesome-privacy",
+         "description": "A curated list of privacy & security-focused software and services"
+      },
+      {
          "title": "Personal Security Checklist",
          "imgSrc": "/img/project-thumbnails/2020_security-checklist.png",
          "href": "https://github.com/Lissy93/personal-security-checklist",
