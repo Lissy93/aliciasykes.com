@@ -1,7 +1,13 @@
+<!-- Deprication Notice -->
+> [!NOTE]
+> This is the code for my old website (demo: [old.aliciasykes.com](https://old.aliciasykes.com/)), used from 2014 till '22.<br>
+> _I've since re-built it using SvelteKit, and you can view the new source at [Lissy93/my-website](https://github.com/Lissy93/my-website)._
+
+
 <!-- Title & Description -->
 <h1 align="center">🌐 Personal Website</h1>
 <p align="center">
-  <i>The source code for <a href="https://aliciasykes.com/">aliciasykes.com</a></i>
+  <i>The source code for <a href="https://old.aliciasykes.com/">aliciasykes.com</a></i>
 </p>
 
 <!-- Screenshot & Link -->
@@ -11,11 +17,13 @@
 </a>
 </p>
 
+
 <!-- Project Commands -->
 
 ## Building and Deploying
 
-To deploy the app: Clone the repo, cd into it, install dependencies then build the app. You can then upload dist to any static hosting provider or CDN, or use the included node server with npm start.
+To deploy the app: Clone the repo, cd into it, install dependencies then build the app.<br>
+You can then upload `dist` to any static hosting provider or CDN, or use the included server.
 
 #### Project Commands
 - Fetch dependencies: `yarn install`
@@ -24,7 +32,6 @@ To deploy the app: Clone the repo, cd into it, install dependencies then build t
 - Start production server: `yarn start`
 - Run the tests: `yarn test`
 - Lint and formats: `yarn lint`
-- Run the tests: `yarn test`
 
 ---
 
